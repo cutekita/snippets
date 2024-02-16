@@ -1,0 +1,94 @@
+
+.baseLayer__8fda3:has(+.layer__2efaa) {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  pointer-events: none;
+}
+
+.baseLayer__8fda3:has(+.layer__2efaa:not(.animating__27211)) {
+  filter: var(--sw-background-filter, blur(5px) brightness(5px));
+}
+
+.layer__2efaa+.layer__2efaa {
+  width: var(--sw-width, 90vw);
+  height: var(--sw-height, 90vh);
+  left: calc((100vw - var(--sw-width, 90vw))/2);
+  top: calc((100vh - var(--sw-height, 90vh))/2);
+  border-radius: var(--sw-rounding, 1em);
+  padding: 0;
+}
+
+.standardSidebarView__1129a {
+  top: 0px !important;
+}
+
+.sidebarRegion__60457 {
+  max-width: fit-content !important;
+}
+
+.sidebar__9e3e2 {
+  padding-top: 1em;
+}
+
+.tools_c0ff70 {
+  top: -50vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+}
+
+.closeButton__34341 {
+  position: absolute;
+  width: 100vw;
+  height: 200vh;
+  cursor: default;
+  border-radius: 0%;
+}
+
+.toolsContainer_f5d55d {
+  z-index: -1;
+}
+
+.contentRegionScroller__86c79:not(:has(>#my-account-tab)) {
+  display: block;
+}
+
+.accountProfileCard__22589>.bannerSVGWrapper__3e7b0 {
+  height: 233px;
+  max-width: 420%;
+}
+
+.accountProfileCard__22589>.bannerSVGWrapper__3e7b0>mask>circle {
+  r: 19.701;
+  cy: 109;
+  cx: 27;
+}
+
+.avatar__6c108 {
+  top: 36%;
+}
+
+.gradient_e94761 {
+  margin-bottom: 40px;
+}
+
+.wave_e98f7c {
+  display: none;
+}
+
+.banner__79cec
+,.max-width_df086e
+,.max-width__4cc00
+,.contentColumn_dc7d36
+,.container__5ed3b {
+  max-width: unset;
+}
+
+.soundButtonSettingContainer__548af {
+  width: unset;
+}
+
+.vc-plugins-grid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
