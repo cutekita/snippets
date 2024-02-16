@@ -1,0 +1,18 @@
+.avatar__991e2 {
+  border-radius: 50% !important;
+}
+
+.pointerEvents__33f6a
+,[id^=svg-mask-avatar-decoration-status-round]>circle
+,.mask__1979f>circle
+,#svg-mask-avatar-decoration-profile-status-square-80>circle {
+  display: var(--si-discord, none);
+}
+
+.vc-platform-indicator {
+  display: var(--si-vencord, unset) !important;
+}
+
+.mask__1979f>foreignObject {
+  mask: none;
+}
