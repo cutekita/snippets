@@ -5,7 +5,10 @@
 .pointerEvents__33f6a
 ,[id^=svg-mask-avatar-decoration-status-round]>circle
 ,.mask__1979f>circle
-,#svg-mask-avatar-decoration-profile-status-square-80>circle {
+,[id^=svg-mask-avatar]>circle
+,#svg-mask-avatar-decoration-status-mobile-80>[fill=black]
+,#svg-mask-avatar-decoration-status-mobile-120>rect
+,.cursorDefault_e4f616{
   display: var(--si-discord, none);
 }
 
