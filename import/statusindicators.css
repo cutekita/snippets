@@ -1,5 +1,5 @@
 .avatar__991e2 {
-  border-radius: 50% !important;
+  border-radius: 50% !important
 }
 
 .pointerEvents__33f6a
@@ -9,13 +9,13 @@
 ,#svg-mask-avatar-decoration-status-mobile-80>[fill=black]
 ,#svg-mask-avatar-decoration-status-mobile-120>rect
 ,.cursorDefault_e4f616{
-  display: var(--si-discord, none);
+  display: var(--si-discord, none)
 }
 
 .vc-platform-indicator {
-  display: var(--si-vencord, unset) !important;
+  display: var(--si-vencord, none) !important;
 }
 
 .mask__1979f>foreignObject {
-  mask: none;
+  mask: none
 }
