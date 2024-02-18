@@ -3,10 +3,13 @@
   height: 0px;
   margin-top: 0px;
 }
-.title_b7d661 {
-  app-region: drag;/*DO NOT USE THIS PROPERTY IT IS ACTUALLY DANGEROUS*/
+.title_b7d661, .container__11d72, .dragRegion_c781db {
+  height: 48px;
+  app-region: drag;
   width: calc(100% - 84px);
-  overflow: hidden;
+}
+.shop_b31ed2 {
+  background: var(--bg-overlay-2,var(--background-primary));
 }
 .topic__16ae3 {
   -webkit-app-region: var(--wb-toggle-topic, no-drag);
