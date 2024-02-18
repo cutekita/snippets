@@ -1,0 +1,24 @@
+.typeWindows__5fa63 {
+  order: 2;
+  height: 0px;
+  margin-top: 0px;
+}
+.title_b7d661 {
+  app-region: drag;/*DO NOT USE THIS PROPERTY IT IS ACTUALLY DANGEROUS*/
+  margin-left: -84px;
+  padding-left: 84px;
+}
+.wordmark__0d178 {
+  display: none;
+}
+.winButton__88672 {
+  position: absolute;
+  top: 0px; 
+  height: 48px;
+}
+.winButtonMinMax__72f36 {
+  right: 28px;
+}
+.winButtonMinMax__72f36+.winButtonMinMax__72f36 {
+  right: 56px;
+}
