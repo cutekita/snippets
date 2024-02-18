@@ -5,8 +5,16 @@
 }
 .title_b7d661 {
   app-region: drag;/*DO NOT USE THIS PROPERTY IT IS ACTUALLY DANGEROUS*/
-  margin-left: -84px;
-  padding-left: 84px;
+  padding-right: 84px;
+  overflow: hidden;
+}
+.toolbar__88c63, .topic__16ae3 {
+  -webkit-app-region: no-drag;
+  max-width: fit-content;
+}
+.toolbar__88c63 {
+  padding: 8px 0 8px 0;
+  margin: -8px 0 -8px 0;
 }
 .wordmark__0d178 {
   display: none;
