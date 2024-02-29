@@ -2,7 +2,7 @@
   order: 2;
   height: 0;
   margin-top: 0;
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 .title_b7d661, .container__11d72, .dragRegion_c781db {
   height: 48px;
