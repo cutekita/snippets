@@ -1,10 +1,10 @@
-.typeWindows__5fa63 {
+.typeWindows_e41dab {
   order: 2;
   height: 0;
   margin-top: 0;
   padding-top: 0 !important;
 }
-.title_b7d661, .container__11d72, .dragRegion_c781db {
+.title_d4ba1a, .container__26baa, .dragRegion_b08d4b {
   height: 48px;
   app-region: drag;
   width: calc(100% - 84px);
@@ -16,22 +16,22 @@
   -webkit-app-region: var(--wb-toggle-topic, no-drag);
   max-width: fit-content;
 }
-.toolbar__88c63 {
+.toolbar__62fb5 {
   -webkit-app-region: no-drag;
   padding: 8px 0 8px 0;
   margin: -8px 0 -8px 0;
 }
-.wordmark__0d178 {
+.wordmark__5b8c9 {
   display: none;
 }
-.winButton__88672 {
+.winButton_f17fb6 {
   position: absolute;
   top: 0px; 
   height: 48px;
 }
-.winButtonMinMax__72f36 {
+.winButtonMinMax_caf9c8 {
   right: 28px;
 }
-.winButtonMinMax__72f36+.winButtonMinMax__72f36 {
+.winButtonMinMax_caf9c8+.winButtonMinMax_caf9c8 {
   right: 56px;
 }

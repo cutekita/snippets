@@ -1,15 +1,15 @@
 
-.baseLayer__8fda3:has(+.layer__2efaa) {
+.baseLayer__2b890:has(+.layer_f7d46a) {
   opacity: 1 !important;
   transform: scale(1) !important;
   pointer-events: none;
 }
 
-.baseLayer__8fda3:has(+.layer__2efaa:not(.animating__27211)) {
+.baseLayer__2b890:has(+.layer_f7d46a:not(.animating_b7d085)) {
   filter: var(--sw-background-filter, blur(5px) brightness(5px));
 }
 
-.layer__2efaa+.layer__2efaa {
+.layer_f7d46a+.layer_f7d46a {
   width: var(--sw-width, 90vw);
   height: var(--sw-height, 90vh);
   left: calc((100vw - var(--sw-width, 90vw))/2);
@@ -18,15 +18,15 @@
   padding: 0;
 }
 
-.standardSidebarView__1129a {
+.standardSidebarView__12528 {
   top: 0px !important;
 }
 
-.sidebarRegion__60457 {
+.sidebarRegion__36437 {
   max-width: fit-content !important;
 }
 
-.sidebar__9e3e2 {
+.sidebar__02e8d {
   padding-top: 1em;
 }
 
@@ -38,7 +38,7 @@
   opacity: 0;
 }
 
-.closeButton__34341 {
+.closeButton__8177f {
   position: absolute;
   width: 100vw;
   height: 200vh;
@@ -46,20 +46,20 @@
   border-radius: 0%;
 }
 
-.toolsContainer_f5d55d {
+.toolsContainer__4e6ad {
   z-index: -1;
 }
 
-.contentRegionScroller__86c79:not(:has(>#my-account-tab)) {
+.contentRegionScroller__9ae20:not(:has(>#my-account-tab)) {
   display: block;
 }
 
-.accountProfileCard__22589>.bannerSVGWrapper__3e7b0 {
+.accountProfileCard__744d8>.bannerSVGWrapper__8a38c {
   height: 233px;
   max-width: 420%;
 }
 
-.accountProfileCard__22589>.bannerSVGWrapper__3e7b0>mask>circle {
+.accountProfileCard__744d8>.bannerSVGWrapper__8a38c>mask>circle {
   r: 19.701;
   cy: 109;
   cx: 27;
@@ -69,7 +69,7 @@
   top: 36%;
 }
 
-.gradient_e94761 {
+.gradient__79da8 {
   margin-bottom: 40px;
 }
 
@@ -78,14 +78,14 @@
 }
 
 .banner__79cec
-,.max-width_df086e
-,.max-width__4cc00
-,.contentColumn_dc7d36
-,.container__5ed3b {
+,.max-width_dfc421
+,.max-width__1da95
+,.contentColumn__5f80b
+,.container_cf8001 {
   max-width: unset;
 }
 
-.soundButtonSettingContainer__548af {
+.soundButtonSettingContainer__3821b {
   width: unset;
 }
 

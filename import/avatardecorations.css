@@ -1,11 +1,11 @@
-.avatarDecoration__14b3c
-,.avatarDecoration_ae35e3 {
+.avatarDecoration__8a0c2
+,.avatarDecoration_cf681a {
     transition: opacity var(--ad-duration, .3s);
 }
-:hover+.avatarDecoration__14b3c
-,:hover>.wrapper_edb6e0>.avatarDecoration_ae35e3 {
+:hover+.avatarDecoration__8a0c2
+,:hover>.wrapper__3ed10>.avatarDecoration_cf681a {
     opacity: 0;
 }
-.avatarDecorationHint__03e0b {
+.avatarDecorationHint__04b99 {
     display: var(--ad-profile-hint, none)
 }

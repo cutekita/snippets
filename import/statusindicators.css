@@ -2,13 +2,13 @@
   border-radius: 50% !important
 }
 
-.pointerEvents__33f6a
+.pointerEvents__585e6
 ,[id^=svg-mask-avatar-decoration-status-round]>circle
-,.mask__1979f>circle
+,.mask_d5067d>circle
 ,[id^=svg-mask-avatar]>circle
 ,#svg-mask-avatar-decoration-status-mobile-80>[fill=black]
 ,#svg-mask-avatar-decoration-status-mobile-120>rect
-,.cursorDefault_e4f616{
+,.cursorDefault_e0f002{
   display: var(--si-discord, none)
 }
 
@@ -16,6 +16,6 @@
   display: var(--si-vencord, none) !important;
 }
 
-.mask__1979f>foreignObject {
+.mask_d5067d>foreignObject {
   mask: none
 }

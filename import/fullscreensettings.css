@@ -1,25 +1,25 @@
-.standardSidebarView__1129a {
+.standardSidebarView__12528 {
   top: 0px !important;
 }
 
-.sidebarRegion__60457 {
+.sidebarRegion__36437 {
   max-width: fit-content !important;
 }
 
-.sidebar__9e3e2 {
+.sidebar__02e8d {
   padding-top: 2em;
 }
 
-.contentRegionScroller__86c79:not(:has(>#my-account-tab)) {
+.contentRegionScroller__9ae20:not(:has(>#my-account-tab)) {
   display: block;
 }
 
-.accountProfileCard__22589>.bannerSVGWrapper__3e7b0 {
+.accountProfileCard__744d8>.bannerSVGWrapper__8a38c {
   height: 233px;
   max-width: 420%;
 }
 
-.accountProfileCard__22589>.bannerSVGWrapper__3e7b0>mask>circle {
+.accountProfileCard__744d8>.bannerSVGWrapper__8a38c>mask>circle {
   r: 19.701;
   cy: 109;
   cx: 27;
@@ -29,7 +29,7 @@
   top: 36%;
 }
 
-.gradient_e94761 {
+.gradient__79da8 {
   margin-bottom: 40px;
 }
 
@@ -38,14 +38,14 @@
 }
 
 .banner__79cec
-,.max-width_df086e
-,.max-width__4cc00
-,.contentColumn_dc7d36
-,.container__5ed3b {
+,.max-width_dfc421
+,.max-width__1da95
+,.contentColumn__5f80b
+,.container_cf8001 {
   max-width: unset;
 }
 
-.soundButtonSettingContainer__548af {
+.soundButtonSettingContainer__3821b {
   width: unset;
 }
 
