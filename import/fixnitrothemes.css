@@ -1,17 +1,21 @@
 .layer_f7d46a+.layer_f7d46a
 ,.container__827e6{
-    background: var(--bg-overlay-app-frame, var(--background-primary));
+    background: var(--bg-overlay-app-frame, var(--background-primary))
 }
 .defaultTextInputWrapper__87159
 ,.addAnswerButtonDefault__2f2a4
 ,.inputDefault__22335 {
-    background: var(--bg-overlay-app-frame, var(--input-background));
+    background: var(--bg-overlay-app-frame, var(--input-background))
 }
 .popout_a6e77f
 ,.wrapper__45980
-,.popout__24e32 {
-  background: var(--bg-overlay-1,var(--background-floating))
-} 
+,.popout__24e32
+,.addReactButton__4342f {
+    background: var(--bg-overlay-1,var(--background-floating))
+}
+.buttonInner__865de {
+    background: var(--bg-overlay-1,var(--background-floating))!important
+}
 .standardSidebarView__12528
 ,.contentRegion__08eba
 ,.contentRegionScroller__9ae20
@@ -20,12 +24,12 @@
 ,.inputWrapper_ecb776>.inputDefault__22335
 ,.header__3b038
 {
-    background: none;
+    background: none
 }
 .container__03ec9{
-    background: none !important;
+    background: none !important
 }
 .defaultTextInputWrapper__87159
 ,.inputDefault__22335 {
-    border: none;
+    border: none
 }
