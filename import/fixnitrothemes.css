@@ -1,7 +1,9 @@
 .layer_f7d46a+.layer_f7d46a
 ,.container__827e6
 ,.container__7afce
-,.container__5130c {
+,.container__5130c
+,.wrapper__0757b>.header_e5d8b2
+,.wrapper__0757b>.emojiPicker__5e2e2 {
     background: var(--bg-overlay-app-frame, var(--background-primary))
 }
 .defaultTextInputWrapper__87159
@@ -35,6 +37,7 @@
 ,.page_e5cc79
 ,.inputWrapper_ecb776>.inputDefault__22335
 ,.header__3b038
+,.wrapper__91b2c
 {
     background: none
 }
