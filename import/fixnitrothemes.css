@@ -1,5 +1,7 @@
 .layer_f7d46a+.layer_f7d46a
-,.container__827e6{
+,.container__827e6
+,.container__7afce
+,.container__5130c {
     background: var(--bg-overlay-app-frame, var(--background-primary))
 }
 .defaultTextInputWrapper__87159
@@ -10,11 +12,21 @@
 .popout_a6e77f
 ,.wrapper__45980
 ,.popout__24e32
-,.addReactButton__4342f {
+,.addReactButton__4342f
+,.role_d81130
+ {
     background: var(--bg-overlay-1,var(--background-floating))
 }
 .buttonInner__865de {
     background: var(--bg-overlay-1,var(--background-floating))!important
+}
+.reactionBtn__3cb2a
+,.reaction__4a43f
+,.sortDropdown__40a16
+,.replies__1b03e
+,.matchingPostsRow__6cdb0
+,.stepContainer_f61e92 {
+    background: var(--bg-overlay-3,var(--background-floating))
 }
 .standardSidebarView__12528
 ,.contentRegion__08eba
