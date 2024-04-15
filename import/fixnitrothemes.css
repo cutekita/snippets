@@ -4,12 +4,14 @@
 ,.container__5130c
 ,.wrapper__0757b>.header_e5d8b2
 ,.wrapper__0757b>.emojiPicker__5e2e2
-,.duration_efc1d7>.select_fe2671 {
+,.duration_efc1d7>.select_fe2671
+,.spoilerContent__383f3
+,.mainCard__0ec2c
+,.matchingPostsRow__6cdb0 {
     background: var(--bg-overlay-app-frame, var(--background-primary))
 }
 .defaultTextInputWrapper__87159
-,.addAnswerButtonDefault__2f2a4,.inputDefault__22335
- {
+,.addAnswerButtonDefault__2f2a4,.inputDefault__22335 {
     background: var(--bg-overlay-app-frame, var(--input-background))
 }
 .popout_a6e77f
@@ -21,21 +23,32 @@
 ,.pill_f055c3
 ,.reaction_ef7e09
 ,.vc-addon-card
-,.select_fe2671 {
-    background: var(--bg-overlay-1,var(--background-floating))
+,.select_fe2671
+,.embedWrapper__47b23
+,.wrapper__8a5dd
+,.container__17159
+,.shiki-root
+,.sortDropdown__40a16
+,.tagsButton__34537
+,.container_ce813c
+,.emptyChannelIcon_d45c50
+,.inline.inline
+,.outerContainer_a76fe9.outerContainer_a76fe9  {
+    background: var(--bg-overlay-5,var(--background-floating))
 }
-.buttonInner__865de {
-    background: var(--bg-overlay-1,var(--background-floating))!important
+.buttonInner__865de
+ {
+    background: var(--bg-overlay-5,var(--background-floating))!important
 }
 .reactionBtn__3cb2a
 ,.reaction__4a43f
-,.sortDropdown__40a16
 ,.replies__1b03e
-,.matchingPostsRow__6cdb0
 ,.stepContainer_f61e92
-,.container_f5b15d
- {
+,.container_f5b15d {
     background: var(--bg-overlay-3,var(--background-floating))
+}
+.audioControls_da7066 {
+  background: #00000055;
 }
 .standardSidebarView__12528
 ,.contentRegion__08eba
