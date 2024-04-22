@@ -2,14 +2,21 @@
 ,.container__827e6
 ,.container__7afce
 ,.container__5130c
-,.wrapper__0757b>.header_e5d8b2
+,.container_c96c91
 ,.spoilerContent__383f3
 ,.mainCard__0ec2c
 ,.matchingPostsRow__6cdb0
 ,.contentWrapper_e0bb2c
 ,.container_f5b15d
 ,.accountProfileCard__744d8
-,.autocomplete__743a5 {
+,.autocomplete__743a5
+,.emojiPicker__5e2e2>.header_e5d8b2
+,.container_eb737e
+,.recentMentionsPopout__40c54
+,.msg-logger-modal-root
+,.container_a30b97
+,.messagesPopoutWrap__10dd1
+,.browser_fa9cea,.userProfileOuterUnthemed__9741c {
     background: var(--bg-overlay-app-frame, var(--background-primary))
 }
 .popout_a6e77f
@@ -34,7 +41,11 @@
 ,.outerContainer_a76fe9.outerContainer_a76fe9
 ,.inspector__80c84
 ,.wrapper__4e6b6
-,.uploadModal__6eb75 {
+,.uploadModal__6eb75
+,.wrapper__0757b>.header_e5d8b2
+,.header__58a85
+,.header__21b33
+,.header__6d44a {
     background: var(--bg-overlay-5,var(--background-floating))
 }
 .buttonInner__865de {
@@ -47,7 +58,12 @@
 ,.searchBar__57f39
 ,.navButtonActive__0c878
 ,.upload_c98ecb
-,.option_eb83e4.option_eb83e4.option_eb83e4[aria-selected="true"] {
+,.option_eb83e4.option_eb83e4.option_eb83e4[aria-selected="true"]
+,.emojiPicker__5e2e2
+,.messages__1aaa1
+,.messageContainer_cb3d47
+,.messageGroupWrapper__1fce2
+,.container__9922f {
     background: var(--bg-overlay-3,var(--background-floating))
 }
 .defaultTextInputWrapper__87159
@@ -58,13 +74,22 @@
 ,.categoryItemDefaultCategorySelected__7d6e0.categoryItemDefaultCategorySelected__7d6e0
 ,.emojiItemSelected__023be.emojiItemSelected__023be
 ,.diversitySelector__0babb:hover
-,.profileCardUsernameRow_f8853e,.badgeList__6b2c7
+,.profileCardUsernameRow_f8853e
+,.badgeList__6b2c7
 ,.fieldButton__1edf0.fieldButton__1edf0
 ,.selected_a523ff.selected_a523ff.selected_a523ff.selected_a523ff
 ,.questionInput_f6087f
 ,.option_eb83e4.option_eb83e4:hover
 ,.duration_efc1d7>.select_fe2671
-,.clickable__0b25f>.base__87e58.base__87e58:hover {
+,.clickable__0b25f[aria-selected="true"]>.base__87e58.base__87e58
+,.clickable__0b25f>.base__87e58.base__87e58:hover
+,.calloutContainer__941c0
+,.friendRequestsButton__77e10
+,.button__292b6
+,.inputWrapper_ecb776>.inputDefault__22335
+,.secondaryButton__11400.secondaryButton__11400
+,.jumpButton__309d6
+,.searchBox__9423b {
     background: #00000055
 }
 .standardSidebarView__12528
@@ -85,18 +110,27 @@
 ,.bodyMedia_ef2282
 ,.option_eb83e4:focus
 ,.base__87e58.base__87e58.base__87e58
+,.guildIcon_ed1ab4
+,.container_cdf5a8
+,.channelHeader_ea0f89
+,.userProfileOuterUnthemed__9741c>.userPanelInner__3184c
  {
     background: none
 }
-.container__03ec9 {
+.container__03ec9
+,.msg-logger-modal-tab-bar-item {
     background: none !important
 }
 .defaultTextInputWrapper__87159
 ,.inputDefault__22335
 ,.duration_efc1d7>.select_fe2671
-,.bodyMedia_ef2282 {
+,.bodyMedia_ef2282
+,.messageGroupWrapper__1fce2 {
     border: none
 }
+.emojiPicker__5e2e2>.header_e5d8b2 {
+  border-radius: 0;
+} 
 .diversitySelector__0babb {
     padding: 5px;
     margin: -5px;
