@@ -4,7 +4,7 @@
   margin-top: 0;
   padding-top: 0 !important;
 }
-.title_d4ba1a, .container__26baa, .dragRegion_b08d4b {
+.title_d4ba1a, .subtitleContainer_f50402>.container__26baa, .subtitleContainer__63ebe>.container__26baa, .dragRegion_b08d4b {
   height: 48px;
   app-region: drag;
   width: calc(100% - 84px);
@@ -34,4 +34,13 @@
 }
 .winButtonMinMax_caf9c8+.winButtonMinMax_caf9c8 {
   right: 56px;
+}
+.container__694a1>.container__26baa>.upperContainer__57565>.toolbar__62fb5 {
+	order: -1;
+}
+.idle_d696d0>div>.chatButton_a40cc3{
+	transform: translate3d(8px,0,0)!important;
+}
+.chatButton_a40cc3 {
+	top: 50%;
 }
