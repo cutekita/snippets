@@ -10,8 +10,8 @@
   padding-top: 2em;
 }
 
-.contentRegionScroller__9ae20:not(:has(>#my-account-tab)) {
-  display: block;
+.contentRegionScroller__9ae20 {
+  display: var(--fs-toggle-closebutton, flex);
 }
 
 .accountProfileCard__744d8>.bannerSVGWrapper__8a38c {
@@ -33,8 +33,7 @@
   margin-bottom: 40px;
 }
 
-.wave_e98f7c
-,.toolsContainer__4e6ad {
+.wave_e98f7c {
   display: none;
 }
 
@@ -52,4 +51,20 @@
 
 .vc-plugins-grid {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.content__4353f {
+	margin: 0;
+	max-width: none;
+}
+
+.closeWrapper__06665 {
+	left: 0;
+}
+.closeButton__8177f {
+    background: var(--bg-overlay-app-frame, var(--background-primary))
+}
+
+.titleContainer_a222f7>.anchor_c8ddc0 {
+	display: none;
 }
