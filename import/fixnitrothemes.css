@@ -19,7 +19,7 @@
 ,.browser_fa9cea,.userProfileOuterUnthemed__9741c
 ,.root__9b46d
 ,.header__93ab0
-,.root_a28985 {
+,.modalSize__8ea81 {
     background: var(--bg-overlay-app-frame, var(--background-primary))
 }
 .popout_a6e77f
@@ -48,7 +48,8 @@
 ,.wrapper__0757b>.header_e5d8b2
 ,.header__58a85
 ,.header__21b33
-,.header__6d44a {
+,.header__6d44a
+ {
     background: var(--bg-overlay-5,var(--background-floating))
 }
 .buttonInner__865de {
@@ -71,7 +72,8 @@
 ,.activityItem__2bb92
 ,.activityItem__2bb92:hover>.activityTextContainer__930a7
 ,.container_bdd168:hover
-,.category_c3da1d:hover {
+,.category_c3da1d:hover
+,.activityItem__2bb92.disabled__71884 {
     background: var(--bg-overlay-3, var(--background-floating))
 }
 .channelChatWrapper__43f43 {
