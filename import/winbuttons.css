@@ -4,7 +4,7 @@
   margin-top: 0;
   padding-top: 0 !important;
 }
-.title_d4ba1a, .subtitleContainer_f50402>.container__26baa, .subtitleContainer__63ebe>.container__26baa, .dragRegion_b08d4b {
+.title_d4ba1a, .subtitleContainer_f50402>.container__26baa, .dragRegion_b08d4b {
   height: 48px;
   app-region: drag;
   width: calc(100% - 84px);
