@@ -16,7 +16,10 @@
 ,.msg-logger-modal-root
 ,.container_a30b97
 ,.messagesPopoutWrap__10dd1
-,.browser_fa9cea,.userProfileOuterUnthemed__9741c {
+,.browser_fa9cea,.userProfileOuterUnthemed__9741c
+,.root__9b46d
+,.header__93ab0
+,.root_a28985 {
     background: var(--bg-overlay-app-frame, var(--background-primary))
 }
 .popout_a6e77f
@@ -64,7 +67,11 @@
 ,.messageContainer_cb3d47
 ,.messageGroupWrapper__1fce2
 ,.container__9922f
-,.chatSidebarOpen_f2e544 {
+,.chatSidebarOpen_f2e544,.listWrapper_b28f3e
+,.activityItem__2bb92
+,.activityItem__2bb92:hover>.activityTextContainer__930a7
+,.container_bdd168:hover
+,.category_c3da1d:hover {
     background: var(--bg-overlay-3, var(--background-floating))
 }
 .channelChatWrapper__43f43 {
@@ -93,8 +100,25 @@
 ,.inputWrapper_ecb776>.inputDefault__22335
 ,.secondaryButton__11400.secondaryButton__11400
 ,.jumpButton__309d6
-,.searchBox__9423b {
+,.searchBox__9423b
+,.soundButton__845c7
+,.buttonOverlayBackground__9265a
+,.container_ec5ce2
+,.selected__3b2ac.selected__3b2ac
+,.categoryIcon__3e47a:hover
+,.soundAddButton_bdadae.soundAddButton_bdadae
+,.category_c3da1d
+,.container_bdd168
+,.searchBox__56feb
+,.container__11a0b
+,.activeCategory__585b4.activeCategory__585b4
+,.clickable__019e3:hover
+,.item_b7fb7e
+,.cardPrimary__1ee6a {
     background: #00000055
+}
+.searchBox__56feb {
+	background: #00000055!important;
 }
 .standardSidebarView__12528
 ,.contentRegion__08eba
@@ -119,7 +143,9 @@
 ,.channelHeader_ea0f89
 ,.userProfileOuterUnthemed__9741c>.userPanelInner__3184c
 ,.container__694a1
- {
+,.scrollTierBackground__89f3e
+,.directoryContainer__36395.directoryContainer__36395
+,.inputWrapper_ecb776>.input_f27786 {
     background: none
 }
 .container__03ec9
@@ -130,7 +156,7 @@
 ,.inputDefault__22335
 ,.duration_efc1d7>.select_fe2671
 ,.bodyMedia_ef2282
-,.messageGroupWrapper__1fce2 {
+,.messageGroupWrapper__1fce2,.cardPrimary__1ee6a {
     border: none
 }
 .emojiPicker__5e2e2>.header_e5d8b2, .container__694a1 {
@@ -153,4 +179,7 @@
     border-radius: 0 0 8px 8px;
     padding: 0 4px 4px 4px;
     margin: 0 -4px -4px -4px;
+}
+.category_a343a6 {
+	margin: 0;
 }
