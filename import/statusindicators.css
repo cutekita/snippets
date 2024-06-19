@@ -1,14 +1,14 @@
-.avatar__991e2 {
+.avatar_c51b4e {
   border-radius: 50% !important
 }
 
-.pointerEvents__585e6
+.pointerEvents_c51b4e
 ,[id^=svg-mask-avatar-decoration-status-round]>circle
-,.mask_d5067d>circle
+,.mask_c51b4e>circle
 ,[id^=svg-mask-avatar]>circle
 ,#svg-mask-avatar-decoration-status-mobile-80>[fill=black]
 ,#svg-mask-avatar-decoration-status-mobile-120>rect
-,.cursorDefault_e0f002{
+,.cursorDefault_c51b4e{
   display: var(--si-discord, none)
 }
 
@@ -16,6 +16,6 @@
   display: var(--si-vencord, none) !important;
 }
 
-.mask_d5067d>foreignObject {
+.mask_c51b4e>foreignObject {
   mask: none
 }

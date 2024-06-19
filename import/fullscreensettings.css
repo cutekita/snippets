@@ -1,51 +1,51 @@
-.standardSidebarView__12528 {
+.standardSidebarView_c25c6d {
   top: 0px !important;
 }
 
-.sidebarRegion__36437 {
+.sidebarRegion_c25c6d {
   max-width: fit-content !important;
 }
 
-.sidebar__02e8d {
+.sidebar_c25c6d {
   padding-top: 2em;
 }
 
-.contentRegionScroller__9ae20 {
+.contentRegionScroller_c25c6d {
   display: var(--fs-toggle-closebutton, flex);
 }
 
-.accountProfileCard__744d8>.bannerSVGWrapper__8a38c {
+.accountProfileCard_b69b77>.bannerSVGWrapper_b32cc2 {
   height: 233px;
   max-width: 420%;
 }
 
-.accountProfileCard__744d8>.bannerSVGWrapper__8a38c>mask>circle {
+.accountProfileCard_b69b77>.bannerSVGWrapper_b32cc2>mask>circle {
   r: 19.701;
   cy: 109;
   cx: 27;
 }
 
-.avatar__6c108 {
+.avatar_b69b77 {
   top: 36%;
 }
 
-.gradient__79da8 {
+.gradient_e74e54 {
   margin-bottom: 40px;
 }
 
-.wave_e98f7c {
+.wave_e74e54 {
   display: none;
 }
 
-.banner__79cec
-,.max-width_dfc421
-,.max-width__1da95
-,.contentColumn__5f80b
-,.container_cf8001 {
+.banner_b12c98
+,.max-width_d00e26
+,.max-width_a2e886
+,.contentColumn_c25c6d
+,.container_f70f48 {
   max-width: unset;
 }
 
-.soundButtonSettingContainer__3821b {
+.soundButtonSettingContainer_c801bb {
   width: unset;
 }
 
@@ -53,18 +53,18 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-.content__4353f {
+.content_da3f59 {
 	margin: 0;
 	max-width: none;
 }
 
-.closeWrapper__06665 {
+.closeWrapper_da3f59 {
 	left: 0;
 }
-.closeButton__8177f {
+.closeButton_df5532 {
     background: var(--bg-overlay-app-frame, var(--background-primary))
 }
 
-.titleContainer_a222f7>.anchor_c8ddc0 {
+.titleContainer_da3f59>.anchor_af404b {
 	display: none;
 }

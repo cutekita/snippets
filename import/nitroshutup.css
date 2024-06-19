@@ -1,11 +1,11 @@
 /*nitroshutup*/
-.buttons__7ecff>.button__581d0 /*messageinput nitro gift button*/
-,.channel__0aef5[aria-posinset="2"] /*nitro tab in home*/
-,.channel__0aef5:not([aria-posinset]) /*shop channel*/
-,.container_bc43c1 /*Boost Server channellist thing*/
-,.scroller__8f066>[role]:first-child /*Server boost in tooltip*/
-,.separator__174fc:nth-child(2) /*separator in server tooltip*/
-,.divider__90677:has(>.flex_f18b02 .shinyButton_d5e126) /*server settings overview animated avatar and banner */
+.buttons_d0696b>.button_dd4f85 /*messageinput nitro gift button*/
+,.channel_c91bad[aria-posinset="2"] /*nitro tab in home*/
+,.channel_c91bad:not([aria-posinset]) /*shop channel*/
+,.container_c75f85 /*Boost Server channellist thing*/
+,.scroller_d90b3d>[role]:first-child /*Server boost in tooltip*/
+,.separator_d90b3d:nth-child(2) /*separator in server tooltip*/
+,.divider_f0a9ff:has(>.flex_bba380 .shinyButton_d5e126) /*server settings overview animated avatar and banner */
 { 
   display: none;
 }
