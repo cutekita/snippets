@@ -17,6 +17,13 @@
 	padding: 0;
 }
 
+.contentRegionScroller_c25c6d {
+	display: block;
+    &::-webkit-scrollbar {
+        display: var(--sw-toggle-content-scrollbar, block);
+    }
+}
+
 .standardSidebarView_c25c6d {
 	top: 0px !important;
 }
@@ -51,10 +58,8 @@
 
 .app_a01fb1 .toolsContainer_c25c6d {
 	z-index: -1;
-}
-
-.contentRegionScroller_c25c6d:not(:has(>#my-account-tab)) {
-	display: block;
+    padding: 0;
+    margin: 0;
 }
 
 .accountProfileCard_b69b77>.bannerSVGWrapper_b32cc2 {
