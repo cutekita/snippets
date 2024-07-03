@@ -12,7 +12,7 @@
 	width: var(--sw-width, 90vw);
 	height: var(--sw-height, 90vh);
 	left: calc((100vw - var(--sw-width, 90vw))/2);
-	top: calc((100vh - var(--sw-height, 90vh))/2);
+	top: calc((100vh - var(--sw-height, 90vh) - var(--wb-sw-compatibility, 22px))/2);
 	border-radius: var(--sw-rounding, 1em);
 	padding: 0;
 }
@@ -26,7 +26,11 @@
 }
 
 .sidebar_c25c6d {
-	padding-top: 1em;
+	padding: 1em 6px 0px 20px;
+}
+
+.contentColumn_c25c6d {
+    margin-bottom: -60px;
 }
 
 .app_a01fb1 .tools_c25c6d {
