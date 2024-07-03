@@ -12,7 +12,7 @@
 	width: var(--sw-width, 90vw);
 	height: var(--sw-height, 90vh);
 	left: calc((100vw - var(--sw-width, 90vw))/2);
-	top: calc((100vh - var(--sw-height, 90vh) - 22px)/2);
+	top: calc((100vh - var(--sw-height, 90vh) - var(--wb-sw-compat, 22px))/2);
 	border-radius: var(--sw-rounding, 1em);
 	padding: 0;
 }
