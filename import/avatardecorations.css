@@ -1,8 +1,8 @@
-.avatarDecoration_ec86aa
+.avatarDecoration_f9f2ca
 ,.avatarDecoration_c51b4e {
     transition: opacity var(--ad-duration, .3s);
 }
-svg:hover+.avatarDecoration_ec86aa
+svg:hover+.avatarDecoration_f9f2ca
 ,div:hover>.wrapper_c51b4e>.avatarDecoration_c51b4e {
     opacity: 0;
 }

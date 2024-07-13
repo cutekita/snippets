@@ -9,7 +9,7 @@
     height: 32px;
     padding: 8px 0;
 }
-.toolbar_e44302 {
+.toolbar_fc4f04 {
     margin-right: 76px;
 }
 .wordmark_a934d8 {
@@ -18,11 +18,11 @@
 .topic_bf3bbb {
   -webkit-app-region: var(--wb-toggle-topic, no-drag);
 }
-.children_e44302 {
+.children_fc4f04 {
     margin: -8px 0;
     -webkit-app-region: drag;
 }
-.container_d1c246>.container_e44302>.upperContainer_e44302>.toolbar_e44302 {
+.container_d1c246>.container_fc4f04>.upperContainer_fc4f>.toolbar_fc4f04 {
 	order: -1;
 }
 .idle_dd069c>div>.chatButton_dd069c{
@@ -31,6 +31,6 @@
 .chatButton_dd069c {
 	top: 50%;
 }
-.chatSidebarOpen_d880dc>.callContainer_d880dc .subtitleContainer_c7b3af>.container_e44302>.upperContainer_e44302>.toolbar_e44302{
+.chatSidebarOpen_d880dc>.callContainer_d880dc .subtitleContainer_c7b3af>.container_fc4f04>.upperContainer_fc4f>.toolbar_fc4f04{
     margin: 0;
 }

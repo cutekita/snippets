@@ -1,5 +1,5 @@
 /*Give every avatar a ring and make it round*/
-.avatar_ec86aa /*Chatavatars*/,
+.avatar_f9f2ca /*Chatavatars*/,
 .wrapper_c51b4e /*Memberlist, Popout, Profile*/
 {
   border: var(--rs-offline-color, #636b75) var(--rs-small-thickness, 3px) var(--rs-border-style, solid);
@@ -8,19 +8,19 @@
 /*Change colours*/
 .wrapper_c51b4e:has(>.mask_c51b4e.svg_c51b4e>.pointerEvents_c51b4e[fill="#23a55a"]),
 .wrapper_c51b4e:has(>.mask_c51b4e.svg_c51b4e>svg>rect[fill="#23a55a"]),
-.contents_ec86aa:has(>.header_ec86aa>.headerText_ec86aa>.vc-platform-indicator>[fill="#23a55a"])>.avatar_ec86aa
+.contents_f9f2ca:has(>.header_f9f2ca>.headerText_f9f2ca>.vc-platform-indicator>[fill="#23a55a"])>.avatar_f9f2ca
 {
   border-color: var(--rs-online-color, #23a55a);
 }
 .wrapper_c51b4e:has(>.mask_c51b4e.svg_c51b4e>.pointerEvents_c51b4e[fill="#f0b232"]),
 .wrapper_c51b4e:has(>.mask_c51b4e.svg_c51b4e>svg>rect[fill="#f0b232"]),
-.contents_ec86aa:has(>.header_ec86aa>.headerText_ec86aa>.vc-platform-indicator>[fill="#f0b232"])>.avatar_ec86aa
+.contents_f9f2ca:has(>.header_f9f2ca>.headerText_f9f2ca>.vc-platform-indicator>[fill="#f0b232"])>.avatar_f9f2ca
 {
   border-color: var(--rs-idle-color, #f0b232);
 }
 .wrapper_c51b4e:has(>.mask_c51b4e.svg_c51b4e>.pointerEvents_c51b4e[fill="#f23f43"]),
 .wrapper_c51b4e:has(>.mask_c51b4e.svg_c51b4e>svg>rect[fill="#f23f43"]),
-.contents_ec86aa:has(>.header_ec86aa>.headerText_ec86aa>.vc-platform-indicator>[fill="#f23f43"])>.avatar_ec86aa
+.contents_f9f2ca:has(>.header_f9f2ca>.headerText_f9f2ca>.vc-platform-indicator>[fill="#f23f43"])>.avatar_f9f2ca
 {
   border-color: var(--rs-dnd-color, #f23f43);
 }
@@ -30,7 +30,7 @@
 border-color: var(--rs-streaming-color, #593695)!important
 }
 .memberInner_a31c43.layout_e9f61e:has(>.content_e9f61e>.nameAndDecorators_e9f61e>.botTag_a31c43[data-tag^=bot])>.avatar_e9f61e>.wrapper_c51b4e,
-.contents_ec86aa:has(>.header_ec86aa>.headerText_ec86aa>.botTag_a02df3[data-tag^=bot])>.avatar_ec86aa,
+.contents_f9f2ca:has(>.header_f9f2ca>.headerText_f9f2ca>.botTag_a02df3[data-tag^=bot])>.avatar_f9f2ca,
 .userPopoutInner_c69a7b:has(>.userPopoutOverlayBackground_c69a7b>.section_d7a21f>div>.userText_c9ccf6>.userTag_c9ccf6>.botTag_a02df3[data-tag^=bot])>.clickable_f89da9>.avatarHoverTarget_f89da9>.wrapper_c51b4e,
 .userProfileInner_c69a7b:has(>.overlayBackground_c69a7b>.body_b9fccc>.container_afed89>div>.nameTag_afed89>.botTag_a02df3[data-tag^=bot])>.topSection_b9fccc>header>.header_ec3b75>div>.wrapper_c51b4e,
 .none_eed6a8:has(>.overlayBackground_c69a7b>.section_d7a21f>div>.userText_c9ccf6>.userTag_c9ccf6>.botTag_a02df3[data-tag^=bot])>div>.avatarWrapper_f89da9>.avatarHoverTarget_f89da9>.wrapper_c51b4e
