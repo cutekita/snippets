@@ -1,0 +1,43 @@
+@keyframes dmprofiles {
+  from {
+    right: -340px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes dmprofiles-arrow {
+  from {
+    right: 335px;
+    scale: 1;
+  }
+  to {
+    right: 340px;
+    scale: 1.5;
+  }
+}
+.userPanelOuter_c69a7b {
+  top: calc((100vh - var(--dp-height, 60vh))/2 - 48px);
+  position: absolute;
+  max-height: var(--dp-height, 60vh);
+  border-radius: var(--dp-border-radius, 8px 0 0 8px);
+  animation: forwards var(--dp-transition-time, 1s) dmprofiles;
+}
+
+.iconWrapper_fc4f04:has(>.icon_fc4f04>path[d="M23 12.38c-.02.38-.45.58-.78.4a6.97 6.97 0 0 0-6.27-.08.54.54 0 0 1-.44 0 8.97 8.97 0 0 0-11.16 3.55c-.1.15-.1.35 0 .5.37.58.8 1.13 1.28 1.61.24.24.64.15.8-.15.19-.38.39-.73.58-1.02.14-.21.43-.1.4.15l-.19 1.96c-.02.19.07.37.23.47A8.96 8.96 0 0 0 12 21a.4.4 0 0 1 .38.27c.1.33.25.65.4.95.18.34-.02.76-.4.77L12 23a11 11 0 1 1 11-10.62ZM15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"]) {
+  position: absolute;
+  right: 0;
+  top: 50vh;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><defs><clipPath><path fill="%2300f" fill-opacity=".514" d="m-7 1024.36h34v34h-34z"/></clipPath><clipPath><path fill="%23aade87" fill-opacity=".472" d="m-6 1028.36h32v32h-32z"/></clipPath></defs><path d="m345.44 248.29l-194.29 194.28c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744l171.91-171.91-171.91-171.9c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.29 194.28c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373" transform="matrix(.03541-.00013.00013.03541 2.98 3.02)" fill="%238d8d8d"/></svg>');
+  rotate: 180deg;
+  &>.icon_fc4f04 {
+    opacity: 0;
+  }
+  &.selected_fc4f04 {
+    rotate: 0deg;
+    right: 335px;
+    transition: right var(--dp-transition-time, 1s);
+    animation: dmprofiles-arrow 0.3s 1s 6 alternate;
+  }
+}
