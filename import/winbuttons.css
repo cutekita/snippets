@@ -1,36 +1,49 @@
-:root {--wb-sw-compat:0px}
+:root {
+  --wb-sw-compat: 0px
+}
+
 .typeWindows_a934d8 {
-    height: 0;
-    margin: 0;
-    padding: 0 !important;
+  height: 0;
+  margin: 0;
+  padding: 0 !important;
 }
+
 .winButton_a934d8 {
-    top: 0;
-    height: 32px;
-    padding: 8px 0;
+  top: 0;
+  height: 32px;
+  padding: 8px 0;
 }
-.toolbar_fc4f04 {
-    margin-right: 76px;
+
+.toolbar_fc4f04,
+.children_fc4f04.children_fc4f04 {
+  margin-right: 76px;
 }
+
 .wordmark_a934d8 {
-    display: none;
+  display: none;
 }
+
 .topic_bf3bbb {
   -webkit-app-region: var(--wb-toggle-topic, no-drag);
 }
+
 .children_fc4f04 {
-    margin: -8px 0;
-    -webkit-app-region: drag;
+  margin: -8px 0;
+  -webkit-app-region: drag;
 }
+
 .container_d1c246>.container_fc4f04>.upperContainer_fc4f>.toolbar_fc4f04 {
-	order: -1;
+  order: -1;
 }
-.idle_dd069c>div>.chatButton_dd069c{
-	transform: translate3d(8px,0,0)!important;
+
+.idle_dd069c>div>.chatButton_dd069c {
+  transform: translate3d(8px, 0, 0) !important;
 }
+
 .chatButton_dd069c {
-	top: 50%;
+  top: 50%;
 }
-.chatSidebarOpen_d880dc>.callContainer_d880dc .subtitleContainer_c7b3af>.container_fc4f04>.upperContainer_fc4f>.toolbar_fc4f04{
-    margin: 0;
+
+.chatSidebarOpen_d880dc>.callContainer_d880dc .subtitleContainer_c7b3af>.container_fc4f04>.upperContainer_fc4f>.toolbar_fc4f04 {
+  margin: 0;
 }
