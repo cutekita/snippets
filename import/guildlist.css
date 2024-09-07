@@ -34,6 +34,8 @@
 .scroller_fea3ef {
   top: calc((100vh - 100%)/2);
   border-radius: var(--gl-roundness, 1.5em);
+  background: var(--gl-background, var(--background-tertiary));
+  backdrop-filter: var(--gl-backdrop-filter);
 }
 
 .expandedFolderBackground_bc7085 {
