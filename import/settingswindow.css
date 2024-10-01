@@ -67,10 +67,10 @@
 	max-width: 420%;
 }
 
-.accountProfileCard_b69b77>.bannerSVGWrapper_b32cc2>mask>circle {
-	r: 19.701;
-	cy: 109;
-	cx: 27;
+.accountProfileCard_b69b77>.mask_d5fdb1>mask>circle {
+  cx: 24;
+  cy: 103;
+  r: 18;
 }
 
 .avatar_b69b77 {
