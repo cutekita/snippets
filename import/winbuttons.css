@@ -2,38 +2,33 @@
   --wb-sw-compat: 0px
 }
 
-.typeWindows_a934d8 {
+.typeWindows__421ed {
   height: 0;
   margin: 0;
   padding: 0 !important;
 }
 
-.winButton_a934d8 {
+.winButton__421ed {
   top: 0;
   height: 32px;
   padding: 8px 0;
 }
 
-.toolbar_fc4f04,
-.children_fc4f04.children_fc4f04 {
+.container__9293f>.upperContainer__9293f>.toolbar__9293f {
   margin-right: 76px;
 }
 
-.wordmark_a934d8 {
+.wordmark__421ed {
   display: none;
 }
 
-.topic_bf3bbb {
+.topic__6ec1a {
   -webkit-app-region: var(--wb-toggle-topic, no-drag);
 }
 
-.children_fc4f04 {
+.children__9293f {
   margin: -8px 0;
   -webkit-app-region: drag;
-}
-
-.container_d1c246>.container_fc4f04>.upperContainer_fc4f>.toolbar_fc4f04 {
-  order: -1;
 }
 
 .idle_dd069c>div>.chatButton_dd069c {
@@ -44,6 +39,14 @@
   top: 50%;
 }
 
-.sidebarOpen_d880dc>.callContainer_d880dc .subtitleContainer_c7b3af>.container_fc4f04>.upperContainer_fc4f>.toolbar_fc4f04 {
-  margin: 0;
+.container__01ae2>.container__9293f>.upperContainer__9293f {
+  justify-content: center;
+  &>.children__9293f {
+  flex: none;
+  }
+  &>.toolbar__9293f {
+  position: absolute;
+  left: 8px;
+  height: 32px;
+  }
 }
