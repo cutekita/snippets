@@ -1,10 +1,10 @@
-.baseLayer_d4b6c5:has(+.layer_d4b6c5) {
+.baseLayer__960e4:has(+.layer__960e4) {
 	opacity: 1 !important;
 	transform: scale(1) !important;
 	pointer-events: none;
 }
 
-.layer_d4b6c5.stop-animations:after {
+.layer__960e4.stop-animations:after {
 	content: "";
 	position: fixed;
 	background: var(--sw-background-filter, #000000a0);
@@ -15,7 +15,7 @@
 	z-index: 100;
 }
 
-.layer_d4b6c5+.layer_d4b6c5 {
+.layer__960e4+.layer__960e4 {
 	width: var(--sw-width, 90vw);
 	height: var(--sw-height, 90vh);
 	left: calc((100vw - var(--sw-width, 90vw))/2);
@@ -24,30 +24,30 @@
 	padding: 0;
 }
 
-.contentRegionScroller_c25c6d {
+.contentRegionScroller__23e6b {
 	display: block;
     &::-webkit-scrollbar {
         display: var(--sw-toggle-content-scrollbar, block);
     }
 }
 
-.standardSidebarView_c25c6d {
+.standardSidebarView__23e6b {
 	top: 0px !important;
 }
 
-.sidebarRegion_c25c6d {
+.sidebarRegion__23e6b {
 	max-width: fit-content !important;
 }
 
-.sidebar_c25c6d {
+.sidebar__23e6b {
 	padding: 1em 6px 0px 20px;
 }
 
-.contentColumn_c25c6d {
-    margin-bottom: -60px;
+.contentColumn__23e6b {
+  margin-bottom: -60px;
 }
 
-.app_a01fb1 .tools_c25c6d {
+.app__160d8 .tools__23e6b {
 	top: -50vh;
 	left: 0;
 	width: 100vw;
@@ -55,7 +55,7 @@
 	opacity: 0;
 }
 
-.app_a01fb1 .closeButton_df5532 {
+.app__160d8 .closeButton_c2b141 {
 	position: absolute;
 	width: 100vw;
 	height: 200vh;
@@ -63,25 +63,25 @@
 	border-radius: 0%;
 }
 
-.app_a01fb1 .toolsContainer_c25c6d {
+.app__160d8 .toolsContainer__23e6b {
 	z-index: -1;
     padding: 0;
     margin: 0;
 }
 
-.accountProfileCard_b69b77>.bannerSVGWrapper_b32cc2 {
+.accountProfileCard__1fed1>.bannerSVGWrapper_b32cc2 {
 	height: 233px;
 	max-width: 420%;
 }
 
-.accountProfileCard_b69b77>.mask_d5fdb1>mask>circle {
-  cx: 24;
-  cy: 103;
-  r: 18;
+.accountProfileCard__1fed1>.mask__68edb>mask>circle {
+  display: none;
 }
 
-.avatar_b69b77 {
-	top: 36%;
+.avatar__1fed1 {
+	top: unset;
+  bottom: 305px;
+  box-shadow: var(--sw-avatarbackground, var(--background-tertiary) 0 0 0 6px);
 }
 
 .gradient_e74e54 {
@@ -95,7 +95,7 @@
 .banner_b12c98,
 .max-width_d00e26,
 .max-width_a2e886,
-.contentColumn_c25c6d,
+.contentColumn__23e6b,
 .container_f70f48 {
 	max-width: unset;
 }
