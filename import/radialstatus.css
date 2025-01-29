@@ -33,11 +33,11 @@
 {
 border-color: var(--rs-streaming-color, #593695)!important
 }
-.memberInner_a31c43.layout_e9f61e:has(>.content_e9f61e>.nameAndDecorators_e9f61e>.botTag_a31c43[data-tag^=bot])>.avatar_e9f61e>.wrapper_c51b4e,
-.contents_f9f2ca:has(>.header_f9f2ca>.headerText_f9f2ca>.botTag_a02df3[data-tag^=bot])>.avatar_f9f2ca,
-.userPopoutInner_c69a7b:has(>.userPopoutOverlayBackground_c69a7b>.section_d7a21f>div>.userText_c9ccf6>.userTag_c9ccf6>.botTag_a02df3[data-tag^=bot])>.clickable_f89da9>.avatarHoverTarget_f89da9>.wrapper_c51b4e,
-.userProfileInner_c69a7b:has(>.overlayBackground_c69a7b>.body_b9fccc>.container_afed89>div>.nameTag_afed89>.botTag_a02df3[data-tag^=bot])>.topSection_b9fccc>header>.header_ec3b75>div>.wrapper_c51b4e,
-.none_eed6a8:has(>.overlayBackground_c69a7b>.section_d7a21f>div>.userText_c9ccf6>.userTag_c9ccf6>.botTag_a02df3[data-tag^=bot])>div>.avatarWrapper_f89da9>.avatarHoverTarget_f89da9>.wrapper_c51b4e
+.memberInner_a31c43.layout_d808b0:has(>.content_d808b0>.nameAndDecorators_d808b0>.botTag_a31c43[data-tag^=bot])>.avatar_d808b0>.wrapper_c51b4e,
+.contents_f9f2ca:has(>.header_f9f2ca>.headerText_f9f2ca>.botTag_a9e77f[data-tag^=bot])>.avatar_f9f2ca,
+.userPopoutInner_c69a7b:has(>.userPopoutOverlayBackground_c69a7b>.section_d7a21f>div>.userText_c9ccf6>.userTag_c9ccf6>.botTag_a9e77f[data-tag^=bot])>.clickable_f89da9>.avatarHoverTarget_f89da9>.wrapper_c51b4e,
+.userProfileInner_c69a7b:has(>.overlayBackground_c69a7b>.body_b9fccc>.container_afed89>div>.nameTag_afed89>.botTag_a9e77f[data-tag^=bot])>.topSection_b9fccc>header>.header_ec3b75>div>.wrapper_c51b4e,
+.none_eed6a8:has(>.overlayBackground_c69a7b>.section_d7a21f>div>.userText_c9ccf6>.userTag_c9ccf6>.botTag_a9e77f[data-tag^=bot])>div>.avatarWrapper_f89da9>.avatarHoverTarget_f89da9>.wrapper_c51b4e
 {
   border-color: var(--rs-bot-color, #5865f2)
 }
