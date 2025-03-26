@@ -1,52 +1,33 @@
 :root {
-  --wb-sw-compat: 0px
+  --wb-sw-compat: 0px; /*Compatibility between Winbuttons and Settingswindow*/
+  --custom-app-top-bar-height: 0px /*Just make the bar 0 height, think of the consequences later*/
 }
 
-.typeWindows__421ed {
-  height: 0;
-  margin: 0;
-  padding: 0 !important;
+.base_c48ade>.bar_c38106 {
+  top: 24px; /*Moving all buttons in the top bar down by 24px to line up with the channel header*/
+  z-index: 101 /*Make sure the buttons don't hide behind the ridiculous z-index of the channel header*/
 }
 
-.winButton__421ed {
-  top: 0;
-  height: 32px;
-  padding: 8px 0;
+.winButton_c38106 { /*Remove discords very necessary dynamic width and height for window buttons*/
+  width: 48px; 
+  height: 48px;
 }
 
 .container__9293f>.upperContainer__9293f>.toolbar__9293f {
-  margin-right: 76px;
+  margin-right: 253px; /*distance the icons from the channel header exactly the distance that the window bar takes*/
 }
 
-.wordmark__421ed {
-  display: none;
+/*Changes the toolbox to have the same colour values for each state as neighbouring buttons*/
+.vc-toolbox-icon.vc-toolbox-icon {
+  color: var(--icon-tertiary);
+}
+.vc-toolbox-btn:hover>.vc-toolbox-icon {
+  color: var(--icon-secondary);
+}
+.selected__9293f>.vc-toolbox-icon.vc-toolbox-icon {
+  color: var(--icon-primary);
 }
 
-.topic__6ec1a {
-  -webkit-app-region: var(--wb-toggle-topic, no-drag);
-}
-
-.children__9293f {
-  margin: -8px 0;
-  -webkit-app-region: drag;
-}
-
-.idle_dd069c>div>.chatButton_dd069c {
-  transform: translate3d(8px, 0, 0) !important;
-}
-
-.chatButton_dd069c {
-  top: 50%;
-}
-
-.container__01ae2>.container__9293f>.upperContainer__9293f {
-  justify-content: center;
-  &>.children__9293f {
-  flex: none;
-  }
-  &>.toolbar__9293f {
-  position: absolute;
-  left: 8px;
-  height: 32px;
-  }
+.winButtonsWithDivider_c38106:before {
+  height: 24px; /*Makes the slight line between minimise and help buttons visible*/
 }
