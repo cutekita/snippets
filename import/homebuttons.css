@@ -1,0 +1,32 @@
+/*properly positions and sizes the buttons*/
+.friendsButtonContainer__35e86 {
+  width: calc(100% / var(--hb-button-count, 3));
+  &>.channel__972a0>.interactive_bf202d>.link__972a0 {
+    padding-right: 8px;
+  }
+}
+.content__99f8c>.channel__972a0:not(.dm__972a0){
+  position: absolute;
+  width: calc(100% / var(--hb-button-count, 3));
+  left: calc(100% / var(--hb-button-count, 3));
+  top: var(--hb-top-distance, 12px);
+  margin: 0;
+  &:nth-of-type(2) {
+    left: calc(100% / var(--hb-button-count, 3) * 2);
+  }
+}
+
+.scroller__99e7c>.content__99f8c>div:first-child {
+  height: var(--hb-top-distance, 12px) !important;
+}
+
+/*aligns the icons to the center and removes the text*/
+.channel__972a0:not(.dm__972a0)>.interactive_bf202d>.link__972a0>.layout__20a53 {
+  justify-content: center;
+  &>.avatar__20a53 {
+    margin: 0;
+  }
+  &>.content__20a53 {
+    display: none;
+  }
+}
