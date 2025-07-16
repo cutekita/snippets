@@ -1,7 +1,7 @@
-# snippets
-dont repost my content, you dont have the right to and i will take action against it
+# Discord Snippets
 
-css snippets i make for discord, supported for vesktop, may work on other clients
+All variables have defaults set, you can search the code for all instances of `var(` to find them and change stuff
 
+might put documentation here at somepoint
 
-if you want to and have no life you can make an issue or pull request and write a proper, cool readme for this (i just dont feel like doing onekocord all over again [even though it is very cool!])
+if anything is broken make an issue and i'll update it, or if the hashes refreshed, you can also just do a pull request with the new ones!
