@@ -2,7 +2,7 @@
   from{backdrop-filter: blur(8px);}
   to{backdrop-filter: blur(0px);}
 }
-.container_e40c16 {
+.container_a2f514 {
   background: var(--ls-background, #00000080);
   pointer-events: none;
   flex-direction: column;
@@ -10,7 +10,7 @@
   animation: ls-filter 1 5s 0.3s ease-in-out;
 }
 
-.container_e40c16:before {
+.container_a2f514:before {
   content: "Connection is being established...";
   color: white;
   font-size: xx-large;
@@ -18,21 +18,21 @@
   font-weight: 600;
 }
 
-.problems_e40c16 {
+.problems_a2f514 {
   display: none;
 }
 
-.tipTitle_e40c16
-,.tip_e40c16 {
+.tipTitle_a2f514
+,.tip_a2f514 {
   font-size: 0;
 }
 
-.tipTitle_e40c16:before {
+.tipTitle_a2f514:before {
   content: "you can still use discord";
   font-size: large;
 }
 
-.tip_e40c16:before {
+.tip_a2f514:before {
   content: "Add \":root{--ls-show:none}\" to your Quickcss to hide this message";
   font-size: large;
 }

@@ -84,23 +84,23 @@
   box-shadow: var(--sw-avatarbackground, var(--background-tertiary) 0 0 0 6px);
 }
 
-.gradient_e74e54 {
+.gradient__8e08c {
 	margin-bottom: 40px;
 }
 
-.wave_e74e54 {
+.wave__8e08c {
 	display: none;
 }
 
-.banner_b12c98,
-.max-width_d00e26,
-.max-width_a2e886,
+.banner__84995,
+.max-width__8e680,
+.max-width__5b321,
 .contentColumn__23e6b,
-.container_f70f48 {
+.container_d9914b {
 	max-width: unset;
 }
 
-.soundButtonSettingContainer_c801bb {
+.soundButtonSettingContainer__84bad {
 	width: unset;
 }
 

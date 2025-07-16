@@ -1,60 +1,60 @@
 /*Give every avatar a ring and make it round*/
-.avatar_f9f2ca /*Chatavatars*/ {
+.avatar_c19a55 /*Chatavatars*/ {
   margin: calc(0px - var(--rs-small-width, 3px));
   margin-top: calc(4px - var(--custom-message-spacing-vertical-container-cozy) - var(--rs-small-width, 3px));
   border: var(--rs-offline-color, #636b75) var(--rs-small-width, 3px) var(--rs-border-style, solid);
   aspect-ratio: 1
 }
-.wrapper_c51b4e /*Memberlist, Popout, Profile*/ {
+.wrapper__44b0c /*Memberlist, Popout, Profile*/ {
   border: var(--rs-offline-color, #636b75) var(--rs-border-style, solid);
   aspect-ratio: 1
 }
 /*Change colours*/
-.wrapper_c51b4e:has(>.mask_c51b4e.svg_c51b4e>.pointerEvents_c51b4e[fill="#23a55a"]),
-.wrapper_c51b4e:has(>.mask_c51b4e.svg_c51b4e>svg>rect[fill="#23a55a"]),
-.contents_f9f2ca:has(>.header_f9f2ca>.headerText_f9f2ca>.vc-platform-indicator>[fill="#23a55a"])>.avatar_f9f2ca
+.wrapper__44b0c:has(>.mask__44b0c.svg__44b0c>.pointerEvents__44b0c[fill="#23a55a"]),
+.wrapper__44b0c:has(>.mask__44b0c.svg__44b0c>svg>rect[fill="#23a55a"]),
+.contents_c19a55:has(>.header_c19a55>.headerText_c19a55>.vc-platform-indicator>[fill="#23a55a"])>.avatar_c19a55
 {
   border-color: var(--rs-online-color, #23a55a)
 }
-.wrapper_c51b4e:has(>.mask_c51b4e.svg_c51b4e>.pointerEvents_c51b4e[fill="#f0b232"]),
-.wrapper_c51b4e:has(>.mask_c51b4e.svg_c51b4e>svg>rect[fill="#f0b232"]),
-.contents_f9f2ca:has(>.header_f9f2ca>.headerText_f9f2ca>.vc-platform-indicator>[fill="#f0b232"])>.avatar_f9f2ca
+.wrapper__44b0c:has(>.mask__44b0c.svg__44b0c>.pointerEvents__44b0c[fill="#f0b232"]),
+.wrapper__44b0c:has(>.mask__44b0c.svg__44b0c>svg>rect[fill="#f0b232"]),
+.contents_c19a55:has(>.header_c19a55>.headerText_c19a55>.vc-platform-indicator>[fill="#f0b232"])>.avatar_c19a55
 {
   border-color: var(--rs-idle-color, #f0b232)
 }
-.wrapper_c51b4e:has(>.mask_c51b4e.svg_c51b4e>.pointerEvents_c51b4e[fill="#f23f43"]),
-.wrapper_c51b4e:has(>.mask_c51b4e.svg_c51b4e>svg>rect[fill="#f23f43"]),
-.contents_f9f2ca:has(>.header_f9f2ca>.headerText_f9f2ca>.vc-platform-indicator>[fill="#f23f43"])>.avatar_f9f2ca
+.wrapper__44b0c:has(>.mask__44b0c.svg__44b0c>.pointerEvents__44b0c[fill="#f23f43"]),
+.wrapper__44b0c:has(>.mask__44b0c.svg__44b0c>svg>rect[fill="#f23f43"]),
+.contents_c19a55:has(>.header_c19a55>.headerText_c19a55>.vc-platform-indicator>[fill="#f23f43"])>.avatar_c19a55
 {
   border-color: var(--rs-dnd-color, #f23f43)
 }
-.wrapper_c51b4e:has(>.mask_c51b4e.svg_c51b4e>.pointerEvents_c51b4e[fill="#593695"]),
-.wrapper_c51b4e:has(>.mask_c51b4e.svg_c51b4e>svg>rect[fill="#593695"])
+.wrapper__44b0c:has(>.mask__44b0c.svg__44b0c>.pointerEvents__44b0c[fill="#593695"]),
+.wrapper__44b0c:has(>.mask__44b0c.svg__44b0c>svg>rect[fill="#593695"])
 {
 border-color: var(--rs-streaming-color, #593695)!important
 }
-.memberInner_a31c43.layout_d808b0:has(>.content_d808b0>.nameAndDecorators_d808b0>.botTag_a31c43[data-tag^=bot])>.avatar_d808b0>.wrapper_c51b4e,
-.contents_f9f2ca:has(>.header_f9f2ca>.headerText_f9f2ca>.botTag_a9e77f[data-tag^=bot])>.avatar_f9f2ca,
-.userPopoutInner_c69a7b:has(>.userPopoutOverlayBackground_c69a7b>.section_d7a21f>div>.userText_c9ccf6>.userTag_c9ccf6>.botTag_a9e77f[data-tag^=bot])>.clickable_f89da9>.avatarHoverTarget_f89da9>.wrapper_c51b4e,
-.userProfileInner_c69a7b:has(>.overlayBackground_c69a7b>.body_b9fccc>.container_afed89>div>.nameTag_afed89>.botTag_a9e77f[data-tag^=bot])>.topSection_b9fccc>header>.header_ec3b75>div>.wrapper_c51b4e,
-.none_eed6a8:has(>.overlayBackground_c69a7b>.section_d7a21f>div>.userText_c9ccf6>.userTag_c9ccf6>.botTag_a9e77f[data-tag^=bot])>div>.avatarWrapper_f89da9>.avatarHoverTarget_f89da9>.wrapper_c51b4e
+.memberInner__5d473.layout__91a9d:has(>.content__91a9d>.nameAndDecorators__91a9d>.botTag__5d473[data-tag^=bot])>.avatar__91a9d>.wrapper__44b0c,
+.contents_c19a55:has(>.header_c19a55>.headerText_c19a55>.botTag__82f07[data-tag^=bot])>.avatar_c19a55,
+.userPopoutInner_c69a7b:has(>.userPopoutOverlayBackground_c69a7b>.section_d7a21f>div>.userText_c9ccf6>.userTag_c9ccf6>.botTag__82f07[data-tag^=bot])>.clickable_f89da9>.avatarHoverTarget_f89da9>.wrapper__44b0c,
+.userProfileInner_c69a7b:has(>.overlayBackground_c69a7b>.body__24502>.container_afed89>div>.nameTag_afed89>.botTag__82f07[data-tag^=bot])>.topSection_b9fccc>header>.header_ec3b75>div>.wrapper__44b0c,
+.none__99f8c:has(>.overlayBackground_c69a7b>.section_d7a21f>div>.userText_c9ccf6>.userTag_c9ccf6>.botTag__82f07[data-tag^=bot])>div>.avatarWrapper_f89da9>.avatarHoverTarget_f89da9>.wrapper__44b0c
 {
   border-color: var(--rs-bot-color, #5865f2)
 }
-.biteSize_f94206>.wrapper_c51b4e {
+.user-profile-popout>.wrapper__44b0c {
   border-width: var(--rs-medium-width, 4px);
   margin: calc(0px - var(--rs-medium-width, 4px))
 }
-.fullSize_f94206>.wrapper_c51b4e {
+.user-profile-modal>.wrapper__44b0c {
   border-width: var(--rs-large-width, 5px);
   margin: calc(0px - var(--rs-large-width, 5px))
 }
 /*Remove ugly components*/
-.mask_c51b4e>mask>rect,
+.mask__44b0c>mask>rect,
 [id^=svg-mask-avatar]>[fill=black],
-.pointerEvents_c51b4e,
-.cursorDefault_c51b4e,
-.mask_c51b4e.svg_c51b4e>circle,
+.pointerEvents__44b0c,
+.cursorDefault__44b0c,
+.mask__44b0c.svg__44b0c>circle,
 .avatarHintInner_f89da9 {
   display: none
 }

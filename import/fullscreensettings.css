@@ -1,51 +1,53 @@
-.standardSidebarView_c25c6d {
+.standardSidebarView__23e6b {
   top: 0px !important;
 }
 
-.sidebarRegion_c25c6d {
+.sidebarRegion__23e6b {
   max-width: fit-content !important;
+  margin-top: var(--wb-fs-compat, 0px);
 }
 
-.sidebar_c25c6d {
+.sidebar__23e6b {
   padding-top: 2em;
 }
 
-.contentRegionScroller_c25c6d {
+.contentRegionScroller__23e6b {
   display: var(--fs-toggle-closebutton, flex);
+  max-width: calc(100vw - var(--custom-standard-sidebar-view-sidebar-total-width) - 8px);
 }
 
-.accountProfileCard_b69b77>.bannerSVGWrapper_b32cc2 {
+.accountProfileCard__1fed1>.bannerSVGWrapper_b32cc2 {
   height: 233px;
   max-width: 420%;
 }
 
-.accountProfileCard_b69b77>.mask_d5fdb1>mask>circle {
-  cx: 19;
-  cy: 99;
-  r: 14;
-}
-
-.avatar_b69b77 {
-  top: 41%;
-}
-
-.gradient_e74e54 {
-  margin-bottom: 40px;
-}
-
-.wave_e74e54 {
+.accountProfileCard__1fed1>.mask__68edb>mask>circle {
   display: none;
 }
 
-.banner_b12c98
-,.max-width_d00e26
-,.max-width_a2e886
-,.contentColumn_c25c6d
-,.container_f70f48 {
+.avatar__1fed1 {
+  top: unset;
+  bottom: 305px;
+  box-shadow: var(--sw-avatarbackground, var(--background-tertiary) 0 0 0 6px);
+}
+
+.gradient__8e08c {
+  margin-bottom: 40px;
+}
+
+.wave__8e08c {
+  display: none;
+}
+
+.banner__84995
+,.max-width__8e680
+,.max-width__5b321
+,.contentColumn__23e6b
+,.container_d9914b {
   max-width: unset;
 }
 
-.soundButtonSettingContainer_c801bb {
+.soundButtonSettingContainer__84bad {
   width: unset;
 }
 
@@ -61,10 +63,16 @@
 .closeWrapper_da3f59 {
 	left: 0;
 }
-.closeButton_df5532 {
-    background: var(--bg-overlay-app-frame, var(--background-primary))
+
+.toolsContainer__23e6b.toolsContainer__23e6b {
+  margin: 84px 0 0 0;
+  padding: 0;
 }
 
-.titleContainer_da3f59>.anchor_af404b {
+.closeButton_c2b141 {
+  background: var(--bg-overlay-app-frame, var(--background-primary))
+}
+
+.titleContainer_da3f59>.anchor_edefb8 {
 	display: none;
 }
