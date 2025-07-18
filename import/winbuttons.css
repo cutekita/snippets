@@ -1,7 +1,7 @@
 :root {
   --wb-sw-compat: 0px; /*Compatibility between Winbuttons and Settingswindow*/
   --wb-fs-compat: 48px; /*Compatibility between Winbuttons and Fullscreensettings*/
-  --custom-app-top-bar-height: 0px /*Just make the bar 0 height, think of the consequences later*/
+  --custom-app-top-bar-height: 0px; /*Just make the bar 0 height, think of the consequences later*/
   --wb-appframe-trailing-width: calc(165px + 44px * var(--wb-appframe-button-count, 2) + 4px); /*Calculate the width of the trailing group in the appframe*/
 }
 
