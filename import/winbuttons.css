@@ -18,6 +18,10 @@
   -webkit-app-region: drag; /*Make it so you can drag the window by the titlebar*/
 }
 
+.children__9293f>.iconWrapper__9293f>.icon__9293f {
+  -webkit-app-region: drag; /*Reverting the previous exception on dragging the channel icon*/
+}
+
 .tabs__80679,.container__44ee9, .tab__65d41, .searchBar__1ac1c, .tabWrapper__26669 {
   -webkit-app-region: no-drag; /*Add exceptions for window dragging to allow clicking*/
 }
