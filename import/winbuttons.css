@@ -2,10 +2,11 @@
   --wb-sw-compat: 0px; /*Compatibility between Winbuttons and Settingswindow*/
   --wb-fs-compat: 48px; /*Compatibility between Winbuttons and Fullscreensettings*/
   --custom-app-top-bar-height: 0px /*Just make the bar 0 height, think of the consequences later*/
+  --wb-appframe-trailing-width: calc(165px + 44px * var(--wb-appframe-button-count, 2) + 4px); /*Calculate the width of the trailing group in the appframe*/
 }
 
 .base_c48ade>.bar_c38106 {
-  top: 24px; /*Moving all buttons in the top bar down by 24px to line up with the channel header*/
+  top: 24px; /*Moving all buttons in the appframe down by 24px to line up with the channel header*/
   z-index: 2001 /*Giving the channel header a z-index of 100 was already excessive, but giving the voice channel chat 2000 is just insane*/
 }
 
@@ -14,7 +15,14 @@
   height: 48px;
 }
 
-.children__9293f, .headerBar__8a7fc {
+.headerBar__8a7fc {
+  -webkit-app-region: drag; /*Make it so you can drag the window by the titlebar in the Discovery tab*/
+  margin-right: var(--wb-appframe-trailing-width); /*Something in this breaks the exceptions from below, so I just make the draggable area smaller*/
+  width: calc(100% - var(--wb-appframe-trailing-width));
+  padding: 0 12px 0 16px; /*Reduce right padding by 4px to match up icons*/
+}
+
+.children__9293f {
   -webkit-app-region: drag; /*Make it so you can drag the window by the titlebar*/
 }
 
@@ -34,8 +42,8 @@
   height: 24px; /*Makes the slight line between minimise and help buttons visible*/
 }
 
-.toolbar__9293f, .searchBar__1ac1c {
-  margin-right: calc(165px + 44px * var(--wb-topbar-button-count, 2) + 4px); /*Distance the different icon sets as if they were in one*/
+.toolbar__9293f {
+  margin-right: var(--wb-appframe-trailing-width); /*Distance the different icon sets as if they were in one*/
   gap: 12px; /*Make the gap between icons consistent*/
 }
 
