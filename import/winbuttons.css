@@ -24,10 +24,9 @@
 
 .children__9293f {
   -webkit-app-region: drag; /*Make it so you can drag the window by the titlebar*/
-}
-
-.children__9293f>.iconWrapper__9293f>.icon__9293f {
-  -webkit-app-region: drag; /*Reverting the previous exception on dragging the channel icon*/
+  &>.iconWrapper__9293f>.icon__9293f {
+    -webkit-app-region: drag; /*Reverting the default exception on dragging the channel icon (why?)*/
+  }
 }
 
 .tabs__80679,.container__44ee9, .tab__65d41, .searchBar__1ac1c, .tabWrapper__26669 {
@@ -66,6 +65,14 @@
 
 .container__9293f, .sidebarList_c48ade, .shop__6db1d, .container__133bf, .homeWrapper__0920e, .chat_f75fb0.chat_f75fb0, .container_a592e1 {
   border-top: 0; /*Remove random top borders above the app*/
+}
+
+.tutorialContainer__1f388 {
+  margin: 16px 0 8px; /*Add a small margin around the first icon in the serverlist, so it fits better with the new layout*/
+}
+
+.title_f75fb0.title_f75fb0, .container__9293f.container__9293f {
+  background: var(--wb-topbar-background, var(--background-gradient-high, var(--background-base-lowest))); /*Custom background for the topbar, defaults to having the same color as the sidebar*/
 }
 
 /*Changes the toolbox to have the same colour values for each state as neighbouring buttons*/
