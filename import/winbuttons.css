@@ -75,6 +75,14 @@
   background: var(--wb-topbar-background, var(--background-gradient-high, var(--background-base-lowest))); /*Custom background for the topbar, defaults to having the same color as the sidebar*/
 }
 
+.innerContainer_e1147e:after { /*Looking at how the apps and servers discovery tabs are made actually just made me sad*/
+  background: var(--wb-topbar-background, var(--background-gradient-high, var(--background-base-lowest)));
+  content: "";
+  position: absolute;
+  height: 48px;
+  width: 100%;
+}
+
 /*Changes the toolbox to have the same colour values for each state as neighbouring buttons*/
 .vc-toolbox-icon.vc-toolbox-icon {
   color: var(--icon-tertiary);
