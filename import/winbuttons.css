@@ -6,7 +6,7 @@
 
 .base_c48ade>.bar_c38106 {
   top: 24px; /*Moving all buttons in the top bar down by 24px to line up with the channel header*/
-  z-index: 101 /*Make sure the buttons don't hide behind the ridiculous z-index of the channel header*/
+  z-index: 2001 /*Giving the channel header a z-index of 100 was already excessive, but giving the voice channel chat 2000 is just insane*/
 }
 
 .winButton_c38106 { /*Remove discords very necessary dynamic width and height for window buttons*/
@@ -37,6 +37,10 @@
 .toolbar__9293f, .searchBar__1ac1c {
   margin-right: calc(165px + 44px * var(--wb-topbar-button-count, 2) + 4px); /*Distance the different icon sets as if they were in one*/
   gap: 12px; /*Make the gap between icons consistent*/
+}
+
+.chat_f75fb0:has(~.chatLayerWrapper__01ae2)>.subtitleContainer_f75fb0>.title_f75fb0>.upperContainer__9293f>.toolbar__9293f {
+  margin-right: 0; /*Remove margin in different scenarios*/
 }
 
 .iconWrapper__9293f>svg { /*Reduce the icon size for consistency*/
