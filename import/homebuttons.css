@@ -1,18 +1,34 @@
+/*Adds one to the button count when the messagerequest icon is there*/
+html {
+  --hb-button-count-dynamic: var(--hb-button-count, 3);
+
+  &:has(.link__972a0[data-list-item-id$="messageRequests"]) {
+    --hb-button-count-dynamic: calc(var(--hb-button-count, 3) + 1);
+  }
+}
+
 /*properly positions and sizes the buttons*/
 .friendsButtonContainer__35e86 {
-  width: calc(100% / var(--hb-button-count, 3));
+  width: calc(100% / var(--hb-button-count-dynamic));
+
   &>.channel__972a0>.interactive_bf202d>.link__972a0 {
     padding-right: 8px;
   }
 }
-.content__99f8c>.channel__972a0:not(.dm__972a0){
+
+.content__99f8c>.channel__972a0:not(.dm__972a0) {
   position: absolute;
-  width: calc(100% / var(--hb-button-count, 3));
-  left: calc(100% / var(--hb-button-count, 3));
+  width: calc(100% / var(--hb-button-count-dynamic));
+  left: calc(100% / var(--hb-button-count-dynamic));
   top: var(--hb-top-distance, 12px);
   margin: 0;
+
   &:nth-of-type(2) {
-    left: calc(100% / var(--hb-button-count, 3) * 2);
+    left: calc(100% / var(--hb-button-count-dynamic) * 2);
+  }
+
+  &:nth-of-type(3) {
+    left: calc(100% / var(--hb-button-count-dynamic) * 3);
   }
 }
 
@@ -21,12 +37,25 @@
 }
 
 /*aligns the icons to the center and removes the text*/
-.channel__972a0:not(.dm__972a0)>.interactive_bf202d>.link__972a0>.layout__20a53 {
-  justify-content: center;
-  &>.avatar__20a53 {
-    margin: 0;
+.channel__972a0:not(.dm__972a0)>.interactive_bf202d>.link__972a0 {
+  padding: 8px;
+
+  &>.layout__20a53 {
+    justify-content: center;
+
+    &>.avatar__20a53 {
+      margin: 0;
+    }
+
+    &>.content__20a53 {
+      display: none;
+    }
   }
-  &>.content__20a53 {
-    display: none;
-  }
+}
+
+.link__972a0>.numberBadge__2b1f5 {
+  position: absolute;
+  left: 50%;
+  top: 16px;
+  scale: 0.8;
 }
