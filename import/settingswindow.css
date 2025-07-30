@@ -96,7 +96,7 @@
 .max-width__8e680,
 .max-width__5b321,
 .contentColumn__23e6b,
-.container_d9914b {
+.container_d9914b,.leftContent__69ef9,.leftColumn_dbba93,.content__99f8c,.settingsContent_b454a6 {
 	max-width: unset;
 }
 
@@ -106,4 +106,21 @@
 
 .vc-plugins-grid {
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.content__99f8c.content__99f8c {
+  margin-right: 40px;
+}
+
+/*Server Tag selection grid*/
+.pickerGrid__69ef9 {
+  grid-template-columns: repeat(auto-fill, 64px);
+}
+
+.topPill_b3f026 {
+  -webkit-app-region: no-drag
+}
+
+.container_cdb2b0 {
+  width: unset;
 }
