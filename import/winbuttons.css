@@ -46,6 +46,14 @@
   gap: 12px; /*Make the gap between icons consistent*/
 }
 
+.headerBarInner__1a9ce {
+  margin-right: calc(var(--wb-appframe-trailing-width) - 12px); /*Fix the margin on the quests page*/
+}
+
+.alignedRightContent__80679 {
+  margin-right: calc(var(--wb-appframe-trailing-width) + 12px); /*Add margin to the orbs wallet on the shop pages*/
+}
+
 .chat_f75fb0:has(~.chatLayerWrapper__01ae2)>.subtitleContainer_f75fb0>.title_f75fb0>.upperContainer__9293f>.toolbar__9293f {
   margin-right: 0; /*Remove margin in different scenarios*/
 }
@@ -69,6 +77,14 @@
 
 .tutorialContainer__1f388 {
   margin: 16px 0 8px; /*Add a small margin around the first icon in the serverlist, so it fits better with the new layout*/
+}
+
+.headerBarContent__1a9ce {
+  padding: 0; /*Remove the padding on the quests page wallet since we already move it left*/
+}
+
+.balanceWidgetMenu__80679 {
+  margin: 0; /*Remove internal margin on the quests icon in the shop pages*/
 }
 
 .title_f75fb0.title_f75fb0, .container__9293f.container__9293f {
