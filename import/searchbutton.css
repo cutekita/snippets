@@ -1,0 +1,38 @@
+.search__97492:not(.open__97492) {
+  &>.searchBar__97492 {
+    width: fit-content;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+
+    &>.DraftEditor-root {
+      width: 32px;
+      position: absolute;
+      padding: 0;
+
+      &>.public-DraftEditorPlaceholder-root>.public-DraftEditorPlaceholder-inner {
+        color: transparent;
+      }
+    }
+  }
+}
+
+.search__49676 {
+  margin: 0;
+}
+
+.open__97492>.searchBar__97492>.icon__97492 {
+  margin-top: -3px;
+  margin-right: -1px;
+}
+
+.icon__97492.icon__97492 {
+  height: 32px;
+  width: 32px;
+}
+
+.iconContainer_a45028 {
+  width: 20px;
+  height: 20px;
+}
