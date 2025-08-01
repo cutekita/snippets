@@ -1,6 +1,5 @@
 .baseLayer__960e4:has(+.layer__960e4) {
 	opacity: 1 !important;
-	transform: scale(1) !important;
 	pointer-events: none;
 }
 
@@ -22,6 +21,7 @@
 	top: calc((100vh - var(--sw-height, 90vh) - var(--wb-sw-compat, 22px))/2);
 	border-radius: var(--sw-rounding, 1em);
 	padding: 0;
+	z-index: 101;
 }
 
 .contentRegionScroller__23e6b {
