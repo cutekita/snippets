@@ -108,10 +108,6 @@
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-.content__99f8c.content__99f8c {
-  margin-right: 40px;
-}
-
 /*Server Tag selection grid*/
 .pickerGrid__69ef9 {
   grid-template-columns: repeat(auto-fill, 64px);
