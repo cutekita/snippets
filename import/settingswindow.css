@@ -129,3 +129,17 @@
 .container_cdb2b0 {
   width: unset;
 }
+
+/*Fix a janky part of the voice channel chat with 1002 z-index overlaying the settings*/
+.layerContainer_da8173.layerContainer_da8173 {
+  z-index: 1;
+}
+
+.channelChatWrapper_cb9592 {
+  pointer-events: none;
+  background: none;
+}
+
+.wrapper_cb9592 {
+  background: none;
+}
