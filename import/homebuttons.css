@@ -1,3 +1,11 @@
+/**
+  * @name Homebuttons
+  * @author cutekita
+  * @version 1.1
+  * @description Collapses the different tabs in the home tab into neat buttons
+  * @website https://github.com/cutekita/snippets
+*/
+
 /*Adds one to the button count when the messagerequest icon is there*/
 html {
   --hb-button-count-dynamic: var(--hb-button-count, 3);

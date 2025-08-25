@@ -1,3 +1,11 @@
+/**
+  * @name Settingswindow
+  * @author cutekita
+  * @version 2.0
+  * @description Displays the settings page like a window
+  * @website https://github.com/cutekita/snippets
+*/
+
 .baseLayer__960e4:has(+.layer__960e4) {
 	opacity: 1 !important;
 	pointer-events: none;

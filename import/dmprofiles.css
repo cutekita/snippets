@@ -1,3 +1,11 @@
+/**
+  * @name DMProfiles
+  * @author cutekita
+  * @version 2.0
+  * @description Displays the button to open profiles in DMs as an arrow
+  * @website https://github.com/cutekita/snippets
+*/
+
 @keyframes dmprofiles {
   from {
     right: -340px;

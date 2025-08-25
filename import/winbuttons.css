@@ -1,3 +1,11 @@
+/**
+  * @name Winbuttons
+  * @author cutekita
+  * @version 2.0
+  * @description Seamlessly merges the window buttons into the channel header
+  * @website https://github.com/cutekita/snippets
+*/
+
 :root {
   --wb-sw-compat: 0px; /*Compatibility between Winbuttons and Settingswindow*/
   --wb-fs-compat: 48px; /*Compatibility between Winbuttons and Fullscreensettings*/
