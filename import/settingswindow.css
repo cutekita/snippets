@@ -32,8 +32,9 @@
 	z-index: 101;
 }
 
-.contentRegionScroller__23e6b {
+.contentRegionScroller__23e6b.contentRegionScroller__23e6b {
 	display: block;
+	margin-top: 0;
     &::-webkit-scrollbar {
         display: var(--sw-toggle-content-scrollbar, block);
     }

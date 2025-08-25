@@ -1,12 +1,12 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 2.0
+  * @version 2.1
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
 
-:root {
+html {
   --wb-sw-compat: 0px; /*Compatibility between Winbuttons and Settingswindow*/
   --wb-fs-compat: 48px; /*Compatibility between Winbuttons and Fullscreensettings*/
   --custom-app-top-bar-height: 0px; /*Just make the bar 0 height, think of the consequences later*/
@@ -116,4 +116,9 @@
 }
 .selected__9293f>.vc-toolbox-icon.vc-toolbox-icon {
   color: var(--icon-primary);
+}
+
+/*Reintroduce top margin that was hidden due to --custom-app-top-bar-height: 0*/
+.platform-win .contentRegionScroller__23e6b {
+  margin-top: 32px;
 }
