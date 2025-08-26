@@ -1,7 +1,7 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 2.0.2
+  * @version 2.0.3
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
@@ -52,6 +52,14 @@ html:root {
 .toolbar__9293f {
   margin-right: var(--wb-appframe-trailing-width); /*Distance the different icon sets as if they were in one*/
   gap: 12px; /*Make the gap between icons consistent*/
+}
+
+.headerBar__49508.headerBar__49508 {
+  background: none; /*Remove background on headerbar in voice channels*/
+}
+
+.sidebarOpen_cb9592 .toolbar__49508 {
+  margin-right: 0; /*Remove right margin on the headerbar in voice channels when chat is open*/
 }
 
 .headerBarInner__1a9ce {
