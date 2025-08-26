@@ -1,7 +1,7 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 2.0.3
+  * @version 2.0.4
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
@@ -15,7 +15,7 @@ html:root {
 
 .base_c48ade>.bar_c38106 {
   top: 24px; /*Moving all buttons in the appframe down by 24px to line up with the channel header*/
-  z-index: 2001 /*Giving the channel header a z-index of 100 was already excessive, but giving the voice channel chat 2000 is just insane*/
+  z-index: 2 /*Giving the channel header a z-index of 100 was already excessive, but giving the voice channel chat 2000 is just insane*/
 }
 
 .winButton_c38106 { /*Remove discords very necessary dynamic width and height for window buttons*/
@@ -54,20 +54,12 @@ html:root {
   gap: 12px; /*Make the gap between icons consistent*/
 }
 
-.headerBar__49508.headerBar__49508 {
+.headerBar__49508.headerBar__49508.headerBar__49508 {
   background: none; /*Remove background on headerbar in voice channels*/
 }
 
 .sidebarOpen_cb9592 .toolbar__49508 {
   margin-right: 0; /*Remove right margin on the headerbar in voice channels when chat is open*/
-}
-
-.headerBarInner__1a9ce {
-  margin-right: calc(var(--wb-appframe-trailing-width) - 12px); /*Fix the margin on the quests page*/
-}
-
-.alignedRightContent__80679 {
-  margin-right: calc(var(--wb-appframe-trailing-width) + 12px); /*Add margin to the orbs wallet on the shop pages*/
 }
 
 .chat_f75fb0:has(~.chatLayerWrapper__01ae2)>.subtitleContainer_f75fb0>.title_f75fb0>.upperContainer__9293f>.toolbar__9293f {
@@ -129,4 +121,12 @@ html:root {
 /*Reintroduce top margin that was hidden due to --custom-app-top-bar-height: 0*/
 .platform-win .contentRegionScroller__23e6b {
   margin-top: 32px;
+}
+
+/*z-index fixes for all kinds of silly highly z-indexed elements*/
+.layerContainer_da8173 /*Voice channel chat*/
+,.wrapper_cb9592 /*Voice channel tab*/
+,.container__9293f /*Channel header*/
+{
+  z-index: 1;
 }
