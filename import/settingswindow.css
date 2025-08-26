@@ -1,7 +1,7 @@
 /**
   * @name Settingswindow
   * @author cutekita
-  * @version 2.0.1
+  * @version 2.0.3
   * @description Displays the settings page like a window
   * @website https://github.com/cutekita/snippets
 */
@@ -132,7 +132,7 @@
 
 /*Fix a janky part of the voice channel chat with 1002 z-index overlaying the settings*/
 .layerContainer_da8173.layerContainer_da8173 {
-  z-index: 1;
+  z-index: 2;
 }
 
 .channelChatWrapper_cb9592 {
@@ -143,3 +143,4 @@
 .wrapper_cb9592 {
   background: none;
 }
+
