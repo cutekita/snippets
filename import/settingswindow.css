@@ -1,7 +1,7 @@
 /**
   * @name Settingswindow
   * @author cutekita
-  * @version 2.0.3
+  * @version 2.0.5
   * @description Displays the settings page like a window
   * @website https://github.com/cutekita/snippets
 */
@@ -19,7 +19,7 @@
 	top: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 100;
+	z-index: 1;
 }
 
 .layer__960e4+.layer__960e4 {
@@ -29,7 +29,7 @@
 	top: calc((100vh - var(--sw-height, 90vh) - var(--wb-sw-compat, 22px))/2);
 	border-radius: var(--sw-rounding, 1em);
 	padding: 0;
-	z-index: 101;
+	z-index: 1;
 }
 
 .contentRegionScroller__23e6b.contentRegionScroller__23e6b {
@@ -130,11 +130,6 @@
   width: unset;
 }
 
-/*Fix a janky part of the voice channel chat with 1002 z-index overlaying the settings*/
-.layerContainer_da8173.layerContainer_da8173 {
-  z-index: 2;
-}
-
 .channelChatWrapper_cb9592 {
   pointer-events: none;
   background: none;
@@ -144,3 +139,11 @@
   background: none;
 }
 
+/*z-index fixes for all kinds of silly highly z-indexed elements*/
+.layerContainer_da8173 /*Voice channel chat*/
+,.wrapper_cb9592 /*Voice channel tab*/
+,.title_f75fb0 /*Channel header*/
+,.panels_c48ade /*User panel*/
+{
+  z-index: 1;
+}
