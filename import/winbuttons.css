@@ -1,7 +1,7 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 2.0.4
+  * @version 2.0.5
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
@@ -129,4 +129,9 @@ html:root {
 ,.container__9293f /*Channel header*/
 {
   z-index: 1;
+}
+
+/*Fix page content in quests page overlaying above the header when scrolling down*/
+.container_e9ef78, .contentSection_b6bcee {
+  z-index: 0;
 }
