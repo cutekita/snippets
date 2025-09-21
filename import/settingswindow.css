@@ -1,7 +1,7 @@
 /**
   * @name Settingswindow
   * @author cutekita
-  * @version 2.0.5
+  * @version 2.0.6
   * @description Displays the settings page like a window
   * @website https://github.com/cutekita/snippets
 */
@@ -34,7 +34,6 @@
 
 .contentRegionScroller__23e6b.contentRegionScroller__23e6b {
 	display: block;
-	margin-top: 0;
     &::-webkit-scrollbar {
         display: var(--sw-toggle-content-scrollbar, block);
     }
@@ -53,6 +52,7 @@
 }
 
 .contentColumn__23e6b {
+  padding-top: 28px;
   margin-bottom: -60px;
 }
 
@@ -140,7 +140,7 @@
 }
 
 /*z-index fixes for all kinds of silly highly z-indexed elements*/
-.layerContainer_da8173 /*Voice channel chat*/
+.layerContainer__59d0d /*Voice channel chat*/
 ,.wrapper_cb9592 /*Voice channel tab*/
 ,.title_f75fb0 /*Channel header*/
 ,.panels_c48ade /*User panel*/
