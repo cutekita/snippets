@@ -1,86 +1,58 @@
 /**
   * @name Fullscreensettings
   * @author cutekita
-  * @version 2.0.0
+  * @version 3.0.0
   * @description Expands the settings to fill the entire screen
   * @website https://github.com/cutekita/snippets
 */
 
-.standardSidebarView__23e6b {
-  top: 0px !important;
-}
+/* -- Full screen settings -- */
 
+/*Remove empty space left and above sidebar*/
 .sidebarRegion__23e6b {
-  max-width: fit-content !important;
-  margin-top: var(--wb-fs-compat, 0px);
+  max-width: fit-content;
+  margin-top: var(--custom-app-top-bar-height);
 }
 
 .sidebar__23e6b {
-  padding-top: 2em;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.contentRegionScroller__23e6b {
-  display: var(--fs-toggle-closebutton, flex);
-  max-width: calc(100vw - var(--custom-standard-sidebar-view-sidebar-total-width) - 8px);
+/*Fill the rest of the page with settings content*/
+.contentColumn__23e6b /*Container for all settings pages*/
+,.max-width__8e680, .max-width__5b321 /*Family Centre > Activity*/
+,.container_d9914b /*Family Centre > My Family*/{
+  max-width: none;
 }
 
-.accountProfileCard__1fed1>.bannerSVGWrapper_b32cc2 {
-  height: 233px;
-  max-width: 420%;
+/*Remove out of place padding*/
+.contentColumn__23e6b {
+  padding-top: 0;
 }
 
+/*Change how many columns plugin/theme grids have to a variable*/
+.vc-plugins-grid, .vc-settings-theme-grid {
+	grid-template-columns: repeat(auto-fill, minmax(calc(100% / (var(--fs-grid-columns, 5) + 1)), 1fr));
+}
+
+/*All kinds of issues with the avatar on the my account page, just replace the circle background with a border*/
 .accountProfileCard__1fed1>.mask__68edb>mask>circle {
   display: none;
 }
 
 .avatar__1fed1 {
-  top: unset;
-  bottom: 305px;
-  box-shadow: var(--sw-avatarbackground, var(--background-tertiary) 0 0 0 6px);
+  top: unset !important;
+  bottom: 320.5px;
+  border: var(--background-base-lowest) 6px solid;
+  margin: -6px;
 }
 
-.gradient__8e08c {
-  margin-bottom: 40px;
+/*Fix mic test expanding infinitely*/
+.micTestButton__169b3 {
+  max-width: 84.375px
 }
 
-.wave__8e08c {
-  display: none;
-}
-
-.banner__84995
-,.max-width__8e680
-,.max-width__5b321
-,.contentColumn__23e6b
-,.container_d9914b {
-  max-width: unset;
-}
-
-.soundButtonSettingContainer__84bad {
-  width: unset;
-}
-
-.vc-plugins-grid {
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-
-.content_da3f59 {
-	margin: 0;
-	max-width: none;
-}
-
-.closeWrapper_da3f59 {
-	left: 0;
-}
-
-.toolsContainer__23e6b.toolsContainer__23e6b {
-  margin: 84px 0 0 0;
-  padding: 0;
-}
-
-.closeButton_c2b141 {
-  background: var(--bg-overlay-app-frame, var(--background-primary))
-}
-
-.titleContainer_da3f59>.anchor_edefb8 {
-	display: none;
+.wrapper__06283 {
+  max-width: 568px;
 }
