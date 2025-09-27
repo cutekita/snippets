@@ -1,149 +1,143 @@
 /**
   * @name Settingswindow
   * @author cutekita
-  * @version 2.0.6
+  * @version 3.0.0
   * @description Displays the settings page like a window
   * @website https://github.com/cutekita/snippets
 */
 
+/*Show original app and make it uninteractable when settings are open*/
 .baseLayer__960e4:has(+.layer__960e4) {
-	opacity: 1 !important;
-	pointer-events: none;
-}
-
-.layer__960e4.stop-animations:after {
-	content: "";
-	position: fixed;
-	background: var(--sw-background-filter, #000000a0);
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 1;
-}
-
-.layer__960e4+.layer__960e4 {
-	width: var(--sw-width, 90vw);
-	height: var(--sw-height, 90vh);
-	left: calc((100vw - var(--sw-width, 90vw))/2);
-	top: calc((100vh - var(--sw-height, 90vh) - var(--wb-sw-compat, 22px))/2);
-	border-radius: var(--sw-rounding, 1em);
-	padding: 0;
-	z-index: 1;
-}
-
-.contentRegionScroller__23e6b.contentRegionScroller__23e6b {
-	display: block;
-    &::-webkit-scrollbar {
-        display: var(--sw-toggle-content-scrollbar, block);
-    }
-}
-
-.standardSidebarView__23e6b {
-	top: 0px !important;
-}
-
-.sidebarRegion__23e6b {
-	max-width: fit-content !important;
-}
-
-.sidebar__23e6b {
-	padding: 1em 6px 0px 20px;
-}
-
-.contentColumn__23e6b {
-  padding-top: 28px;
-  margin-bottom: -60px;
-}
-
-.app__160d8 .tools__23e6b {
-	top: -50vh;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	opacity: 0;
-}
-
-.app__160d8 .closeButton_c2b141 {
-	position: absolute;
-	width: 100vw;
-	height: 200vh;
-	cursor: default;
-	border-radius: 0%;
-}
-
-.app__160d8 .toolsContainer__23e6b {
-	z-index: -1;
-    padding: 0;
-    margin: 0;
-}
-
-.accountProfileCard__1fed1>.bannerSVGWrapper_b32cc2 {
-	height: 233px;
-	max-width: 420%;
-}
-
-.accountProfileCard__1fed1>.mask__68edb>mask>circle {
-  display: none;
-}
-
-.avatar__1fed1 {
-	top: unset;
-  bottom: 305px;
-  box-shadow: var(--sw-avatarbackground, var(--background-tertiary) 0 0 0 6px);
-}
-
-.gradient__8e08c {
-	margin-bottom: 40px;
-}
-
-.wave__8e08c {
-	display: none;
-}
-
-.banner__84995,
-.max-width__8e680,
-.max-width__5b321,
-.contentColumn__23e6b,
-.container_d9914b,.leftContent__69ef9,.leftColumn_dbba93,.content__99f8c,.settingsContent_b454a6 {
-	max-width: unset;
-}
-
-.soundButtonSettingContainer__84bad {
-	width: unset;
-}
-
-.vc-plugins-grid {
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-
-/*Server Tag selection grid*/
-.pickerGrid__69ef9 {
-  grid-template-columns: repeat(auto-fill, 64px);
-}
-
-.topPill_b3f026 {
-  -webkit-app-region: no-drag
-}
-
-.container_cdb2b0 {
-  width: unset;
-}
-
-.channelChatWrapper_cb9592 {
+  opacity: 1 !important;
   pointer-events: none;
-  background: none;
 }
 
-.wrapper_cb9592 {
-  background: none;
+/*Shrink settings container and center it*/
+.layer__960e4+.layer__960e4 {
+  width: var(--sw-width, 90vw);
+  height: var(--sw-height, 90vh);
+  left: calc((100vw - var(--sw-width, 90vw))/2);
+  top: calc((100vh - var(--sw-height, 90vh))/2);
+  border-radius: var(--sw-rounding, 1em);
+  padding: 0;
+  z-index: 1;
+  --custom-app-top-bar-height: var(--sw-top-margin, 32px);
 }
 
-/*z-index fixes for all kinds of silly highly z-indexed elements*/
+/*Darken background (filters cause immense lag)*/
+.layer__960e4.stop-animations:after {
+  content: "";
+  position: fixed;
+  background: var(--sw-background-filter, #000000a0);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/*Reduce z-index for elements on main page with insane values*/
 .layerContainer__59d0d /*Voice channel chat*/
 ,.wrapper_cb9592 /*Voice channel tab*/
 ,.title_f75fb0 /*Channel header*/
 ,.panels_c48ade /*User panel*/
 {
   z-index: 1;
+}
+
+/*Remove space intended for top bar*/
+.standardSidebarView__23e6b {
+  top: 0px !important;
+}
+
+/*Make the close button for the settings take up the entire app, but hide behind the settings*/
+.toolsContainer__23e6b {
+  position: absolute;
+  width: 200vw;
+  height: 200vh;
+  top: -50vh;
+  left: -50vw;
+  z-index: -1;
+  opacity: 0;
+}
+
+.closeButton_c2b141{
+  width: 200vw;
+  height: 200vh;
+  flex: none;
+}
+
+/*Without this, the button doesn't work, it's only not applied when on Audit log or Invites in server settings | ???*/
+.tools__23e6b {
+  position: fixed;
+}
+
+/* -- Fullscreen Settings -- */
+
+/*Remove empty space left and above sidebar*/
+.sidebarRegion__23e6b {
+  max-width: fit-content;
+  margin-top: var(--custom-app-top-bar-height);
+}
+
+.sidebar__23e6b {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/*Fill the rest of the page with settings content*/
+.contentColumn__23e6b /*Container for all settings pages*/
+,.max-width__8e680, .max-width__5b321 /*Family Centre > Activity*/
+,.container_d9914b /*Family Centre > My Family*/
+,.leftColumn_dbba93 /*Server Profile*/
+,.leftContent_a84c50 /*Server Tag*/
+,.content_d125d2.content_d125d2 /*Roles*/, .contentWidth_c6bf1b /*Roles > Edit Roles*/ 
+,.content__5906b.content__5906b /*Audit Log*/ {
+  max-width: none;
+}
+
+/*Remove out of place padding*/
+.contentColumn__23e6b {
+  padding-top: 0;
+}
+
+/*Change how many columns plugin/theme grids have to a variable*/
+.vc-plugins-grid, .vc-settings-theme-grid {
+	grid-template-columns: repeat(auto-fill, minmax(calc(100% / (var(--fs-grid-columns, 5) + 1)), 1fr));
+}
+
+/*All kinds of issues with the avatar on the my account page, just replace the circle background with a border*/
+.accountProfileCard__1fed1>.mask__68edb>mask>circle {
+  display: none;
+}
+
+.avatar__1fed1 {
+  top: unset !important;
+  bottom: 320.5px;
+  border: var(--background-base-lowest) 6px solid;
+  margin: -6px;
+}
+
+/*Fix mic test expanding infinitely*/
+.micTestButton__169b3 {
+  max-width: 84.375px
+}
+
+.wrapper__06283 {
+  max-width: 568px;
+}
+
+/*Server tag selection grid*/
+.pickerGrid_a84c50 {
+  grid-template-columns: repeat(auto-fill, 64px);
+}
+
+/*Move boost progress bar display in Boost Perks to the right*/
+.column_d63405:last-child {
+  flex-basis: 0;
+}
+
+.container__4b8d8 /*Server Bans*/, 
+.channelBrowser__514d8 /*Onboarding default channels*/{
+  width: unset;
 }
