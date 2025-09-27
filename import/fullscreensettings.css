@@ -1,14 +1,12 @@
 /**
   * @name Fullscreensettings
   * @author cutekita
-  * @version 3.0.0
+  * @version 3.1.0
   * @description Expands the settings to fill the entire screen
   * @website https://github.com/cutekita/snippets
 */
 
-/* -- Full screen settings -- */
-
-/*Remove empty space left and above sidebar*/
+/*Remove empty space around sidebar*/
 .sidebarRegion__23e6b {
   max-width: fit-content;
   margin-top: var(--custom-app-top-bar-height);
@@ -22,7 +20,11 @@
 /*Fill the rest of the page with settings content*/
 .contentColumn__23e6b /*Container for all settings pages*/
 ,.max-width__8e680, .max-width__5b321 /*Family Centre > Activity*/
-,.container_d9914b /*Family Centre > My Family*/{
+,.container_d9914b /*Family Centre > My Family*/
+,.leftColumn_dbba93 /*Server Profile*/
+,.leftContent_a84c50 /*Server Tag*/
+,.content_d125d2.content_d125d2 /*Roles*/, .contentWidth_c6bf1b /*Roles > Edit Roles*/ 
+,.content__5906b.content__5906b /*Audit Log*/ {
   max-width: none;
 }
 
@@ -55,4 +57,19 @@
 
 .wrapper__06283 {
   max-width: 568px;
+}
+
+/*Server tag selection grid*/
+.pickerGrid_a84c50 {
+  grid-template-columns: repeat(auto-fill, 64px);
+}
+
+/*Move boost progress bar display in Boost Perks to the right*/
+.column_d63405:last-child {
+  flex-basis: 0;
+}
+
+.container__4b8d8 /*Server Bans*/, 
+.channelBrowser__514d8 /*Onboarding default channels*/{
+  width: unset;
 }
