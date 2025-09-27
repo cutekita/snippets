@@ -1,7 +1,7 @@
 /**
   * @name Homebuttons
   * @author cutekita
-  * @version 1.0.2
+  * @version 1.1.0
   * @description Collapses the different tabs in the home tab into neat buttons
   * @website https://github.com/cutekita/snippets
 */
@@ -15,33 +15,39 @@ html {
   }
 }
 
-/*properly positions and sizes the buttons*/
+/*Friends Button*/
 .friendsButtonContainer__35e86 {
   width: calc(100% / var(--hb-button-count-dynamic));
-
-  &>.channel__972a0>.interactive_bf202d>.link__972a0 {
-    padding-right: 8px;
-  }
 }
 
-.content__99f8c>.channel__972a0:not(.dm__972a0) {
+/*Nitro Button*/
+div:not([class])>.channel__972a0:not(.dm__972a0) {
   position: absolute;
   width: calc(100% / var(--hb-button-count-dynamic));
-  left: calc(100% / var(--hb-button-count-dynamic));
-  top: var(--hb-top-distance, 12px);
+  left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-nitro-order, 2) - 1));
+  top: var(--hb-vertical-margin, 12px);
   margin: 0;
+}
 
+/*Shop & Message Requests*/
+ul>.channel__972a0:not(.dm__972a0) {
+  position: absolute;
+  width: calc(100% / var(--hb-button-count-dynamic));
+  left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-shop-order, 3) - 1));
+  top: var(--hb-vertical-margin, 12px);
+  margin: 0;
   &:nth-of-type(2) {
-    left: calc(100% / var(--hb-button-count-dynamic) * 2);
-  }
-
-  &:nth-of-type(3) {
-    left: calc(100% / var(--hb-button-count-dynamic) * 3);
+    left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-requests-order, 4) - 1));
   }
 }
 
-.scroller__99e7c>.content__99f8c>div:first-child {
-  height: var(--hb-top-distance, 12px) !important;
+/*equal distance top and bottom*/
+.scroller__99e7c>.content_d125d2>div:first-child {
+  height: var(--hb-vertical-margin, 12px) !important;
+}
+
+.sectionDivider__35e86 {
+  margin-top: var(--hb-vertical-margin, 12px);
 }
 
 /*aligns the icons to the center and removes the text*/
@@ -61,6 +67,7 @@ html {
   }
 }
 
+/*fix notification icon*/
 .link__972a0>.numberBadge__2b1f5 {
   position: absolute;
   left: 50%;
