@@ -1,7 +1,7 @@
 /**
   * @name Settingswindow
   * @author cutekita
-  * @version 3.0.0
+  * @version 3.0.1
   * @description Displays the settings page like a window
   * @website https://github.com/cutekita/snippets
 */
@@ -102,8 +102,8 @@
 }
 
 /*Change how many columns plugin/theme grids have to a variable*/
-.vc-plugins-grid, .vc-settings-theme-grid {
-	grid-template-columns: repeat(auto-fill, minmax(calc(100% / (var(--fs-grid-columns, 5) + 1)), 1fr));
+div:not([class])>.vc-plugins-grid, .vc-settings-theme-grid {
+	grid-template-columns: repeat(auto-fill, minmax(calc(100% / (var(--fs-grid-columns, 4) + 1)), 1fr));
 }
 
 /*All kinds of issues with the avatar on the my account page, just replace the circle background with a border*/
