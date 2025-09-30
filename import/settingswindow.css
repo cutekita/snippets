@@ -1,7 +1,7 @@
 /**
   * @name Settingswindow
   * @author cutekita
-  * @version 3.0.1
+  * @version 3.0.3
   * @description Displays the settings page like a window
   * @website https://github.com/cutekita/snippets
 */
@@ -43,6 +43,16 @@
 ,.panels_c48ade /*User panel*/
 {
   z-index: 1;
+}
+
+/*Apps and Servers Discovery header*/
+.headerBar__8a7fc {
+  z-index: 2;
+}
+
+/*Create server popup*/
+.layerContainer__59d0d:has(>.scrim_d9cec8) {
+  z-index: 2;
 }
 
 /*Remove space intended for top bar*/
