@@ -1,7 +1,7 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 2.0.5
+  * @version 2.0.6
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
@@ -37,7 +37,7 @@ html:root {
   }
 }
 
-.tabs__80679,.container__44ee9, .tab__65d41, .searchBar__1ac1c, .tabWrapper__26669 {
+.tabs__80679,.container__44ee9, .tab__65d41, .searchBar__1ac1c, .tabWrapper__26669, .searchBar__824d3 {
   -webkit-app-region: no-drag; /*Add exceptions for window dragging to allow clicking*/
 }
 
