@@ -1,7 +1,7 @@
 /**
   * @name Settingswindow
   * @author cutekita
-  * @version 3.0.3
+  * @version 3.0.4
   * @description Displays the settings page like a window
   * @website https://github.com/cutekita/snippets
 */
@@ -37,7 +37,7 @@
 }
 
 /*Reduce z-index for elements on main page with insane values*/
-.layerContainer__59d0d /*Voice channel chat*/
+.layerContainer__59d0d:has(>.chatLayerWrapper__01ae2) /*Voice channel chat*/
 ,.wrapper_cb9592 /*Voice channel tab*/
 ,.title_f75fb0 /*Channel header*/
 ,.panels_c48ade /*User panel*/
@@ -47,11 +47,6 @@
 
 /*Apps and Servers Discovery header*/
 .headerBar__8a7fc {
-  z-index: 2;
-}
-
-/*Create server popup*/
-.layerContainer__59d0d:has(>.scrim_d9cec8) {
   z-index: 2;
 }
 
