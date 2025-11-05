@@ -124,7 +124,7 @@ html:root {
 }
 
 /*z-index fixes for all kinds of silly highly z-indexed elements*/
-.layerContainer__59d0d /*Voice channel chat*/
+.layerContainer__59d0d:has(>.chatLayerWrapper__01ae2) /*Voice channel chat*/
 ,.wrapper_cb9592 /*Voice channel tab*/
 ,.container__9293f /*Channel header*/
 {
