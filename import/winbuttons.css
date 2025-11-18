@@ -37,7 +37,7 @@ html:root {
   }
 }
 
-.tabs__80679,.container__44ee9, .tab__65d41, .searchBar__1ac1c, .tabWrapper__26669, .searchBar__824d3 {
+.tabs__80679,.container__44ee9, .tab__65d41, .searchBar__1ac1c, .tabWrapper__26669, .searchBar__824d3, .wishlistButton__80679 {
   -webkit-app-region: no-drag; /*Add exceptions for window dragging to allow clicking*/
 }
 
