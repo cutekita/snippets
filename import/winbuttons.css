@@ -1,7 +1,7 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 2.0.7
+  * @version 2.0.8
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
@@ -32,9 +32,25 @@ html:root {
 
 .children__9293f {
   -webkit-app-region: drag; /*Make it so you can drag the window by the titlebar*/
+  padding: 8px 0 8px 16px; /*Fill the draggable area to the whole bar*/
+  margin: -8px 0 -8px -16px;
   &>.iconWrapper__9293f>.icon__9293f {
     -webkit-app-region: drag; /*Reverting the default exception on dragging the channel icon (why?)*/
   }
+}
+
+.navBar__88ef1>.upperContainer__9293f>.children__9293f /*Nitro page header*/
+,.children__9293f.headerBarInner__80679 /*Shop page header*/
+,.children__9293f.headerBarInner__1a9ce /*Quests page header*/
+ {
+  margin: 0 var(--wb-appframe-trailing-width) 0 0;
+  padding: 0;
+  width: calc(100% - var(--wb-appframe-trailing-width));
+}
+
+.header__0b563>.upperContainer__9293f>.children__9293f /*Channels & Roles page*/
+,.header_c791b2>.upperContainer__9293f>.children__9293f /*Members page*/{
+  max-width: calc(100% - var(--wb-appframe-trailing-width));
 }
 
 .tabs__80679,.container__44ee9, .tab__65d41, .searchBar__1ac1c, .tabWrapper__26669, .searchBar__824d3, .wishlistButton__80679 {
@@ -79,7 +95,7 @@ html:root {
   border-top-left-radius: 0; /*Remove top left corner rounding on the sidebar*/
 }
 
-.container__9293f, .sidebarList__5e434, .shop__6db1d, .container__133bf, .homeWrapper__0920e, .chat_f75fb0.chat_f75fb0, .container_a592e1 {
+.container__9293f, .sidebarList__5e434, .shop__6db1d, .container__133bf, .homeWrapper__0920e, .chat_f75fb0.chat_f75fb0, .container_a592e1, .container__955a3 {
   border-top: 0; /*Remove random top borders above the app*/
 }
 
