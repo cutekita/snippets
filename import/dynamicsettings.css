@@ -1,7 +1,7 @@
 /**
   * @name Dynamic Settings
   * @author cutekita
-  * @version 1.0.0
+  * @version 1.0.1
   * @description Allow customising the size of the new main settings modal
   * @website https://github.com/cutekita/snippets
 */
@@ -20,23 +20,23 @@
 /*-- Dynamic Settings --*/
 
 /*Main Settings Container*/
-.panel__6131a
-/*Family Centre Tab*/
-,.max-width__8e680
-,.max-width__5b321
-,.container_d9914b {
+.panel__6131a {
+  margin: var(--ds-header-margin, 32px) 0;
   max-width: none;
 }
 
-.panel__6131a {
-  margin: var(--ds-header-margin, 32px) 0;
+/*Family Centre Tab*/
+.max-width__8e680
+,.max-width__5b321
+,.container_d9914b {
+  max-width: none;
 }
 
 /*Move header to center while fixing the button right*/
 .contentHeaderLeft_e9e3ed {
   margin: 0 var(--ds-header-position, auto);
 }
-.button_a22cb0 {
+.contentHeader_e9e3ed>.button_a22cb0 {
   position: absolute;
   right: 8px;
 }
