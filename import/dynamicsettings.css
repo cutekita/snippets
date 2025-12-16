@@ -1,0 +1,63 @@
+/**
+  * @name Dynamic Settings
+  * @author cutekita
+  * @version 1.0.0
+  * @description Allow customising the size of the new main settings modal
+  * @website https://github.com/cutekita/snippets
+*/
+
+/*-- Fit Settings into Modals --*/
+
+/*Main Settings*/
+.modal_e44912 {
+  max-width: var(--ds-width, 85vw);
+  width: 100%;
+  max-height: var(--ds-height, 90vh);
+  height: 100%;
+  border-radius: var(--ds-rounding, 1em);
+}
+
+/*-- Dynamic Settings --*/
+
+/*Main Settings Container*/
+.panel__6131a
+/*Family Centre Tab*/
+,.max-width__8e680
+,.max-width__5b321
+,.container_d9914b {
+  max-width: none;
+}
+
+.panel__6131a {
+  margin: var(--ds-header-margin, 32px) 0;
+}
+
+/*Move header to center while fixing the button right*/
+.contentHeaderLeft_e9e3ed {
+  margin: 0 var(--ds-header-position, auto);
+}
+.button_a22cb0 {
+  position: absolute;
+  right: 8px;
+}
+
+/*Background for avatars doesn't adjust properly, just replace it*/
+.accountProfileCard__1fed1>.mask__68edb>mask>circle {
+  display: none;
+}
+.avatar__1fed1 {
+  top: unset !important;
+  bottom: 320.5px;
+  border: var(--background-base-lowest) 6px solid;
+  margin: -6px;
+}
+
+/*Change how many columns plugin/theme grids have to a variable*/
+.vc-settings-tab>.vc-plugins-grid, .vc-settings-theme-grid, .vc-changelog-new-plugins-grid {
+	grid-template-columns: repeat(auto-fill, minmax(calc(100% / (var(--ds-grid-columns, 4) + 1)), 1fr));
+}
+
+/*Fix clipping on Saturation slider in Accessibility*/
+.control__5a838:has(>.slider_a562c8) {
+  padding: 0 10px;
+}
