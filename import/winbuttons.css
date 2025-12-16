@@ -1,7 +1,7 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 3.0.0
+  * @version 3.0.1
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
@@ -22,9 +22,9 @@
 }
 
 /*Align window buttons to channel header*/
-.base__5e434>.bar_c38106 {
+.bar_c38106 {
   top: calc(var(--custom-channel-header-height, 48px) / 2);
-  z-index: 2001
+  z-index: 3;
 }
 
 .winButtonsWithDivider_c38106:before {
@@ -78,4 +78,12 @@
 ,.tabs__80679, .alignedRightContent__80679 /*Shop Page*/
 ,.tabs__26669 /*Quests Page*/{
   app-region: no-drag;
+}
+
+/*Overlap Fixes*/
+.wrapper_cb9592~.layerContainer__59d0d {
+  z-index: 2;
+}
+.title_f75fb0 {
+  z-index: 1;
 }
