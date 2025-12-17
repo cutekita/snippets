@@ -1,7 +1,7 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 3.0.2
+  * @version 3.0.3
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
@@ -25,6 +25,12 @@
 .c38106a3f0c3ca76-bar {
   top: calc(var(--custom-channel-header-height, 48px) / 2);
   z-index: 3;
+}
+
+/*Second window buttons when settings are open*/
+.c38106a3f0c3ca76-systemBar {
+  top: 0;
+  z-index: 1003;
 }
 
 .c38106a3f0c3ca76-winButtonsWithDivider:before {
