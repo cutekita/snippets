@@ -1,19 +1,19 @@
 /**
   * @name Settingswindow
   * @author cutekita
-  * @version 3.0.4
+  * @version 3.0.5
   * @description Displays the settings page like a window
   * @website https://github.com/cutekita/snippets
 */
 
 /*Show original app and make it uninteractable when settings are open*/
-.baseLayer__960e4:has(+.layer__960e4) {
+._960e4207cea8323e-baseLayer:has(+._960e4207cea8323e-layer) {
   opacity: 1 !important;
   pointer-events: none;
 }
 
 /*Shrink settings container and center it*/
-.layer__960e4+.layer__960e4 {
+._960e4207cea8323e-layer+._960e4207cea8323e-layer {
   width: var(--sw-width, 90vw);
   height: var(--sw-height, 90vh);
   left: calc((100vw - var(--sw-width, 90vw))/2);
@@ -25,7 +25,7 @@
 }
 
 /*Darken background (filters cause immense lag)*/
-.layer__960e4.stop-animations:after {
+._960e4207cea8323e-layer.stop-animations:after {
   content: "";
   position: fixed;
   background: var(--sw-background-filter, #000000a0);
@@ -37,26 +37,26 @@
 }
 
 /*Reduce z-index for elements on main page with insane values*/
-.layerContainer__59d0d:has(>.chatLayerWrapper__01ae2) /*Voice channel chat*/
-,.wrapper_cb9592 /*Voice channel tab*/
-,.title_f75fb0 /*Channel header*/
-,.panels__5e434 /*User panel*/
+._59d0d7075b521375-layerContainer:has(>._01ae244280823725-chatLayerWrapper) /*Voice channel chat*/
+,.cb9592ad77576717-wrapper /*Voice channel tab*/
+,.f75fb00fb7356cbe-title /*Channel header*/
+,._5e434347c823b592-panels /*User panel*/
 {
   z-index: 1;
 }
 
 /*Apps and Servers Discovery header*/
-.headerBar__8a7fc {
+._8a7fc664acf53af6-headerBar {
   z-index: 2;
 }
 
 /*Remove space intended for top bar*/
-.standardSidebarView__23e6b {
+._23e6b439306f125a-standardSidebarView {
   top: 0px !important;
 }
 
 /*Make the close button for the settings take up the entire app, but hide behind the settings*/
-.toolsContainer__23e6b {
+._23e6b439306f125a-toolsContainer {
   position: absolute;
   width: 200vw;
   height: 200vh;
@@ -66,43 +66,43 @@
   opacity: 0;
 }
 
-.closeButton_c2b141{
+.c2b141c0f80863fb-closeButton{
   width: 200vw;
   height: 200vh;
   flex: none;
 }
 
 /*Without this, the button doesn't work, it's only not applied when on Audit log or Invites in server settings | ???*/
-.tools__23e6b {
+._23e6b439306f125a-tools {
   position: fixed;
 }
 
 /* -- Fullscreen Settings -- */
 
 /*Remove empty space left and above sidebar*/
-.sidebarRegion__23e6b {
+._23e6b439306f125a-sidebarRegion {
   max-width: fit-content;
   margin-top: var(--custom-app-top-bar-height);
 }
 
-.sidebar__23e6b {
+._23e6b439306f125a-sidebar {
   padding-top: 0;
   padding-bottom: 0;
 }
 
 /*Fill the rest of the page with settings content*/
-.contentColumn__23e6b /*Container for all settings pages*/
-,.max-width__8e680, .max-width__5b321 /*Family Centre > Activity*/
-,.container_d9914b /*Family Centre > My Family*/
-,.leftColumn_dbba93 /*Server Profile*/
-,.leftContent_a84c50 /*Server Tag*/
-,.content_d125d2.content_d125d2 /*Roles*/, .contentWidth_c6bf1b /*Roles > Edit Roles*/ 
-,.content__5906b.content__5906b /*Audit Log*/ {
+._23e6b439306f125a-contentColumn /*Container for all settings pages*/
+,._8e680ffe35110238-max-width, ._5b32177e89c63961-max-width /*Family Centre > Activity*/
+,.d9914bd9cd9c033f-container /*Family Centre > My Family*/
+,.dbba9320d9989b05-leftColumn /*Server Profile*/
+,.a84c500639eaa22d-leftContent /*Server Tag*/
+,.d125d22cdfd32cfe-content.d125d22cdfd32cfe-content /*Roles*/, .c6bf1b7af480dfda-contentWidth /*Roles > Edit Roles*/ 
+,._5906b5e639ffa713-content._5906b5e639ffa713-content /*Audit Log*/ {
   max-width: none;
 }
 
 /*Remove out of place padding*/
-.contentColumn__23e6b {
+._23e6b439306f125a-contentColumn {
   padding-top: 0;
 }
 
@@ -112,11 +112,11 @@ div:not([class])>.vc-plugins-grid, .vc-settings-theme-grid {
 }
 
 /*All kinds of issues with the avatar on the my account page, just replace the circle background with a border*/
-.accountProfileCard__1fed1>.mask__68edb>mask>circle {
+._1fed1dd06c7aabf7-accountProfileCard>._68edb95846a37624-mask>mask>circle {
   display: none;
 }
 
-.avatar__1fed1 {
+._1fed1dd06c7aabf7-avatar {
   top: unset !important;
   bottom: 320.5px;
   border: var(--background-base-lowest) 6px solid;
@@ -128,21 +128,21 @@ div:not([class])>.vc-plugins-grid, .vc-settings-theme-grid {
   max-width: 84.375px
 }
 
-.wrapper__06283 {
+._062838a9530acec0-wrapper {
   max-width: 568px;
 }
 
 /*Server tag selection grid*/
-.pickerGrid_a84c50 {
+.a84c500639eaa22d-pickerGrid {
   grid-template-columns: repeat(auto-fill, 64px);
 }
 
 /*Move boost progress bar display in Boost Perks to the right*/
-.column_d63405:last-child {
+.d6340579835014b2-column:last-child {
   flex-basis: 0;
 }
 
-.container__4b8d8 /*Server Bans*/, 
-.channelBrowser__514d8 /*Onboarding default channels*/{
+._4b8d892e5bcb9bd7-container /*Server Bans*/, 
+._514d88095548b794-channelBrowser /*Onboarding default channels*/{
   width: unset;
 }

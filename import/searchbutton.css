@@ -1,13 +1,13 @@
 /**
   * @name Searchbutton
   * @author cutekita
-  * @version 1.0.1
+  * @version 1.0.2
   * @description Collapses the search button when it isn't used
   * @website https://github.com/cutekita/snippets
 */
 
-.search__97492:not(.open__97492) {
-  &>.searchBar__97492 {
+._974928fe84ca9647-search:not(._974928fe84ca9647-open) {
+  &>._974928fe84ca9647-searchBar {
     width: fit-content;
     border: none;
     background: none;
@@ -26,21 +26,16 @@
   }
 }
 
-.search__49676 {
+._496769951eb140fe-search {
   margin: 0;
 }
 
-.open__97492>.searchBar__97492>.icon__97492 {
+._974928fe84ca9647-open>._974928fe84ca9647-searchBar>._974928fe84ca9647-icon {
   margin-top: -3px;
   margin-right: -1px;
 }
 
-.icon__97492.icon__97492 {
+._974928fe84ca9647-icon._974928fe84ca9647-icon {
   height: 32px;
   width: 32px;
-}
-
-.iconContainer_a45028 {
-  width: 20px;
-  height: 20px;
 }

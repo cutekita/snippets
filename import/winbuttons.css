@@ -1,7 +1,7 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 3.0.1
+  * @version 3.0.2
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
@@ -11,79 +11,79 @@
   --app-border-frame: #00000000 !important;
 }
 
-.base__5e434 {
+._5e434347c823b592-base {
   --custom-app-top-bar-height: 0;
 }
 
 /*Resize window buttons to be square*/
-.winButton_c38106 {
+.c38106a3f0c3ca76-winButton {
   width: var(--wb-button-width, 48px); 
   height: var(--custom-channel-header-height, 48px)
 }
 
 /*Align window buttons to channel header*/
-.bar_c38106 {
+.c38106a3f0c3ca76-bar {
   top: calc(var(--custom-channel-header-height, 48px) / 2);
   z-index: 3;
 }
 
-.winButtonsWithDivider_c38106:before {
+.c38106a3f0c3ca76-winButtonsWithDivider:before {
   height: calc(var(--custom-channel-header-height) - 24px);
 }
 
 /*Server Title*/
-.title_c38106 {
+.c38106a3f0c3ca76-title {
   display: none;
 }
 
 /*Distance channel header buttons to not overlap with window buttons*/
-.toolbar__9293f /*Chat*/
-,.headerBarInner__80679.headerBarInner__80679 /*Shop Page*/
-,.headerBarInner__1a9ce.headerBarInner__1a9ce
-,.navBar__88ef1>.upperContainer__9293f>.children__9293f /*Nitro Page*/{
+._9293f6b2fc12398a-toolbar /*Chat*/
+,._8067953d83f4b8a8-headerBarInner._8067953d83f4b8a8-headerBarInner /*Shop Page*/
+,._1a9cebfbd0c9d0f6-headerBarInner._1a9cebfbd0c9d0f6-headerBarInner
+,._88ef12dca13ecf84-navBar>._9293f6b2fc12398a-upperContainer>._9293f6b2fc12398a-children /*Nitro Page*/{
   margin-right: var(--wb-trailing-button-width);
   padding-right: 0;
 }
 /*Discover Page*/
-.headerBar__8a7fc {
+._8a7fc664acf53af6-headerBar {
   padding-right: calc(var(--wb-trailing-button-width) + 16px);
 }
 
 /*Shop Page Orbs*/
-.container__44ee9 {
+._44ee9ab6d1ca72b4-container {
   margin-right: 0;
 }
 
-.navBarContent__88ef1 /*Nitro Page Gift Nitro Button*/
-,.headerBarContent__1a9ce /*Quests Page Orbs*/{
+._88ef12dca13ecf84-navBarContent /*Nitro Page Gift Nitro Button*/
+,._1a9cebfbd0c9d0f6-headerBarContent /*Quests Page Orbs*/{
   padding-right: 0;
 }
 
 /*Don't move buttons in VC when in fullscreen */
-.fullScreen_cb9592~.layerContainer__59d0d, .fullScreen_cb9592 {
+.cb9592ad77576717-fullScreen~._59d0d7075b521375-layerContainer, .cb9592ad77576717-fullScreen {
   --wb-trailing-button-width: 0;
 }
 
 /*Chat*/
-.children__9293f {
+._9293f6b2fc12398a-children {
   app-region: drag;
   padding: 9px 0 8px 16px;
   margin: -8px 0 -8px -16px;
-  &>.iconWrapper__9293f>.icon__9293f {
+  &>._9293f6b2fc12398a-iconWrapper>._9293f6b2fc12398a-icon {
     -webkit-app-region: drag;
   }
 }
 
-.navBarSectionContent__88ef1, .navBarContent__88ef1>.button_a22cb0 /*Nitro Page*/
-,.tabs__80679, .alignedRightContent__80679 /*Shop Page*/
-,.tabs__26669 /*Quests Page*/{
+._88ef12dca13ecf84-navBarSectionContent, ._88ef12dca13ecf84-navBarContent>.a22cb0c66246f5d3-button /*Nitro Page*/
+,._8067953d83f4b8a8-tabs, ._8067953d83f4b8a8-alignedRightContent /*Shop Page*/
+,._2666984507b357ac-tabs /*Quests Page*/{
   app-region: no-drag;
 }
 
 /*Overlap Fixes*/
-.wrapper_cb9592~.layerContainer__59d0d {
+.cb9592ad77576717-wrapper~._59d0d7075b521375-layerContainer {
   z-index: 2;
 }
-.title_f75fb0 {
+.f75fb00fb7356cbe-title {
   z-index: 1;
 }
