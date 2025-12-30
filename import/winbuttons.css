@@ -1,7 +1,7 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 3.0.3
+  * @version 3.0.5
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
@@ -44,7 +44,7 @@
 
 /*Distance channel header buttons to not overlap with window buttons*/
 ._9293f6b2fc12398a-toolbar /*Chat*/
-,._8067953d83f4b8a8-headerBarInner._8067953d83f4b8a8-headerBarInner /*Shop Page*/
+,._354ecbbf936fa060-headerBarInner._354ecbbf936fa060-headerBarInner /*Shop Page*/
 ,._1a9cebfbd0c9d0f6-headerBarInner._1a9cebfbd0c9d0f6-headerBarInner
 ,._88ef12dca13ecf84-navBar>._9293f6b2fc12398a-upperContainer>._9293f6b2fc12398a-children /*Nitro Page*/{
   margin-right: var(--wb-trailing-button-width);
@@ -81,7 +81,7 @@
 }
 
 ._88ef12dca13ecf84-navBarSectionContent, ._88ef12dca13ecf84-navBarContent>.a22cb0c66246f5d3-button /*Nitro Page*/
-,._8067953d83f4b8a8-tabs, ._8067953d83f4b8a8-alignedRightContent /*Shop Page*/
+,._354ecbbf936fa060-tabs, ._354ecbbf936fa060-alignedRightContent /*Shop Page*/
 ,._2666984507b357ac-tabs /*Quests Page*/{
   app-region: no-drag;
 }
