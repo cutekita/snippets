@@ -1,7 +1,7 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 3.0.5
+  * @version 3.0.6
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
@@ -81,7 +81,7 @@
 }
 
 ._88ef12dca13ecf84-navBarSectionContent, ._88ef12dca13ecf84-navBarContent>.a22cb0c66246f5d3-button /*Nitro Page*/
-,._354ecbbf936fa060-tabs, ._354ecbbf936fa060-alignedRightContent /*Shop Page*/
+,._354ecbbf936fa060-tabs, ._8067953d83f4b8a8-alignedRightContent /*Shop Page*/
 ,._2666984507b357ac-tabs /*Quests Page*/{
   app-region: no-drag;
 }
