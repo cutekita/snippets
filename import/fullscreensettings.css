@@ -1,35 +1,35 @@
 /**
   * @name Fullscreensettings
   * @author cutekita
-  * @version 3.1.2
+  * @version 3.1.3
   * @description Expands the settings to fill the entire screen
   * @website https://github.com/cutekita/snippets
 */
 
 /*Remove empty space around sidebar*/
-._23e6b439306f125a-sidebarRegion {
+.sidebarRegion__23e6b {
   max-width: fit-content;
   margin-top: var(--custom-app-top-bar-height);
 }
 
-._23e6b439306f125a-sidebar {
+.sidebar__23e6b {
   padding-top: 0;
   padding-bottom: 0;
 }
 
 /*Fill the rest of the page with settings content*/
-._23e6b439306f125a-contentColumn /*Container for all settings pages*/
-,._8e680ffe35110238-max-width, ._5b32177e89c63961-max-width /*Family Centre > Activity*/
-,.d9914bd9cd9c033f-container /*Family Centre > My Family*/
-,.dbba9320d9989b05-leftColumn /*Server Profile*/
-,.a84c500639eaa22d-leftContent /*Server Tag*/
-,.d125d22cdfd32cfe-content.d125d22cdfd32cfe-content /*Roles*/, .c6bf1b7af480dfda-contentWidth /*Roles > Edit Roles*/ 
-,._5906b5e639ffa713-content._5906b5e639ffa713-content /*Audit Log*/ {
+.contentColumn__23e6b /*Container for all settings pages*/
+,.max-width__8e680, .max-width__5b321 /*Family Centre > Activity*/
+,.container_d9914b /*Family Centre > My Family*/
+,.leftColumn_dbba93 /*Server Profile*/
+,.leftContent_a84c50 /*Server Tag*/
+,.content_d125d2.content_d125d2 /*Roles*/, .contentWidth_c6bf1b /*Roles > Edit Roles*/ 
+,.content__5906b.content__5906b /*Audit Log*/ {
   max-width: none;
 }
 
 /*Remove out of place padding*/
-._23e6b439306f125a-contentColumn {
+.contentColumn__23e6b {
   padding-top: 0;
 }
 
@@ -39,32 +39,32 @@ div:not([class])>.vc-plugins-grid, .vc-settings-theme-grid {
 }
 
 /*All kinds of issues with the avatar on the my account page, just replace the circle background with a border*/
-._1fed1dd06c7aabf7-accountProfileCard>._68edb95846a37624-mask>mask>circle {
+.accountProfileCard__1fed1>.mask__68edb>mask>circle {
   display: none;
 }
 
-._1fed1dd06c7aabf7-avatar {
+.avatar__1fed1 {
   top: unset !important;
   bottom: 320.5px;
   border: var(--background-base-lowest) 6px solid;
   margin: -6px;
 }
 
-._062838a9530acec0-wrapper {
+.wrapper__06283 {
   max-width: 568px;
 }
 
 /*Server tag selection grid*/
-.a84c500639eaa22d-pickerGrid {
+.pickerGrid_a84c50 {
   grid-template-columns: repeat(auto-fill, 64px);
 }
 
 /*Move boost progress bar display in Boost Perks to the right*/
-.d6340579835014b2-column:last-child {
+.column_d63405:last-child {
   flex-basis: 0;
 }
 
-._4b8d892e5bcb9bd7-container /*Server Bans*/, 
-._514d88095548b794-channelBrowser /*Onboarding default channels*/{
+.container__4b8d8 /*Server Bans*/, 
+.channelBrowser__514d8 /*Onboarding default channels*/{
   width: unset;
 }

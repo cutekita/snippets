@@ -1,7 +1,7 @@
 /**
   * @name Homebuttons
   * @author cutekita
-  * @version 1.1.1
+  * @version 1.1.2
   * @description Collapses the different tabs in the home tab into neat buttons
   * @website https://github.com/cutekita/snippets
 */
@@ -10,18 +10,18 @@
 html {
   --hb-button-count-dynamic: var(--hb-button-count, 3);
 
-  &:has(._972a0d22c8afa7f0-link[data-list-item-id$="messageRequests"]) {
+  &:has(.link__972a0[data-list-item-id$="messageRequests"]) {
     --hb-button-count-dynamic: calc(var(--hb-button-count, 3) + 1);
   }
 }
 
 /*Friends Button*/
-.e6b7699ce8339e1c-friendsButtonContainer {
+.friendsButtonContainer_e6b769 {
   width: calc(100% / var(--hb-button-count-dynamic));
 }
 
 /*Nitro Button*/
-div:not([class])>._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm) {
+div:not([class])>.channel__972a0:not(.dm__972a0) {
   position: absolute;
   width: calc(100% / var(--hb-button-count-dynamic));
   left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-nitro-order, 2) - 1));
@@ -30,7 +30,7 @@ div:not([class])>._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm) {
 }
 
 /*Shop & Message Requests*/
-ul>._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm) {
+ul>.channel__972a0:not(.dm__972a0) {
   position: absolute;
   width: calc(100% / var(--hb-button-count-dynamic));
   left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-shop-order, 3) - 1));
@@ -42,33 +42,33 @@ ul>._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm) {
 }
 
 /*equal distance top and bottom*/
-._99e7cad8d4c55236-scroller>.d125d22cdfd32cfe-content>div:first-child {
+.scroller__99e7c>.content_d125d2>div:first-child {
   height: var(--hb-vertical-margin, 12px) !important;
 }
 
-.e6b7699ce8339e1c-sectionDivider {
+.sectionDivider_e6b769 {
   margin-top: var(--hb-vertical-margin, 12px);
 }
 
 /*aligns the icons to the center and removes the text*/
-._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm)>.bf202d63ad53e289-interactive>._972a0d22c8afa7f0-link {
+.channel__972a0:not(.dm__972a0)>.interactive_bf202d>.link__972a0 {
   padding: 8px;
 
-  &>._20a53846fe2e8513-layout {
+  &>.layout__20a53 {
     justify-content: center;
 
-    &>._20a53846fe2e8513-avatar {
+    &>.avatar__20a53 {
       margin: 0;
     }
 
-    &>._20a53846fe2e8513-content {
+    &>.content__20a53 {
       display: none;
     }
   }
 }
 
 /*fix notification icon*/
-._972a0d22c8afa7f0-link>._2b1f52e43a8f1c02-numberBadge {
+.link__972a0>.numberBadge__2b1f5 {
   position: absolute;
   left: 50%;
   top: 16px;
@@ -76,6 +76,6 @@ ul>._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm) {
 }
 
 /*Temporary Nitro Advertisement*/
-.e4ef2250e26e0a8f-premiumTrialBadge {
+.premiumTrialBadge_e4ef22 {
   display: none;
 }

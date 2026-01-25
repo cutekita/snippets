@@ -1,7 +1,7 @@
 /**
   * @name Dynamic Settings
   * @author cutekita
-  * @version 1.0.2
+  * @version 1.0.3
   * @description Allow customising the size of the new main settings modal
   * @website https://github.com/cutekita/snippets
 */
@@ -9,7 +9,7 @@
 /*-- Fit Settings into Modals --*/
 
 /*Main Settings*/
-.e4491282b6a5364a-modal {
+.modal_e44912 {
   max-width: var(--ds-width, 85vw);
   width: 100%;
   max-height: var(--ds-height, 90vh);
@@ -20,32 +20,32 @@
 /*-- Dynamic Settings --*/
 
 /*Main Settings Container*/
-._6131ab3dbe0affed-panel {
+.panel__6131a {
   margin: var(--ds-header-margin, 32px) 0;
   max-width: none;
 }
 
 /*Family Centre Tab*/
-._8e680ffe35110238-max-width
-,._5b32177e89c63961-max-width
-,.d9914bd9cd9c033f-container {
+.max-width__8e680
+,.max-width__5b321
+,.container_d9914b {
   max-width: none;
 }
 
 /*Move header to center while fixing the button right*/
-.e9e3ed8b8badfe05-contentHeaderLeft {
+.contentHeaderLeft_e9e3ed {
   margin: 0 var(--ds-header-position, auto);
 }
-.e9e3ed8b8badfe05-contentHeader>.a22cb0c66246f5d3-button {
+.contentHeader_e9e3ed>.button_a22cb0 {
   position: absolute;
   right: 8px;
 }
 
 /*Background for avatars doesn't adjust properly, just replace it*/
-._1fed1dd06c7aabf7-accountProfileCard>._68edb95846a37624-mask>mask>circle {
+.accountProfileCard__1fed1>.mask__68edb>mask>circle {
   display: none;
 }
-._1fed1dd06c7aabf7-avatar {
+.avatar__1fed1 {
   top: unset !important;
   bottom: 320.5px;
   border: var(--background-base-lowest) 6px solid;
@@ -58,6 +58,6 @@
 }
 
 /*Fix clipping on Saturation slider in Accessibility*/
-._5a8382cf5c9d77df-control:has(>.a562c840daab72a7-slider) {
+.control__5a838:has(>.slider_a562c8) {
   padding: 0 10px;
 }
