@@ -1,7 +1,7 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 3.0.7
+  * @version 3.0.8
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
@@ -97,4 +97,8 @@
 /*Server list*/
 .guilds__5e434 {
   margin-top: 12px;
+}
+
+.backForwardButtons__63abb {
+  display: none;
 }
