@@ -1,7 +1,7 @@
 /**
   * @name Homebuttons
   * @author cutekita
-  * @version 1.2.0
+  * @version 1.2.1
   * @description Collapses the different tabs in the home tab into neat buttons
   * @website https://github.com/cutekita/snippets
 */
@@ -21,7 +21,7 @@ html {
 }
 
 /*Nitro Button*/
-.content_d125d2>div:nth-child(3) {
+.scroller__99e7c>.content_d125d2>div:nth-child(3) {
   position: absolute;
   width: calc(100% / var(--hb-button-count-dynamic));
   left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-nitro-order, 2) - 1));
