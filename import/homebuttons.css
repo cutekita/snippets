@@ -1,17 +1,17 @@
 /**
   * @name Homebuttons
   * @author cutekita
-  * @version 1.1.2
+  * @version 1.2.0
   * @description Collapses the different tabs in the home tab into neat buttons
   * @website https://github.com/cutekita/snippets
 */
 
 /*Adds one to the button count when the messagerequest icon is there*/
 html {
-  --hb-button-count-dynamic: var(--hb-button-count, 3);
+  --hb-button-count-dynamic: var(--hb-button-count, 4);
 
   &:has(.link__972a0[data-list-item-id$="messageRequests"]) {
-    --hb-button-count-dynamic: calc(var(--hb-button-count, 3) + 1);
+    --hb-button-count-dynamic: calc(var(--hb-button-count, 4) + 1);
   }
 }
 
@@ -21,7 +21,7 @@ html {
 }
 
 /*Nitro Button*/
-div:not([class])>.channel__972a0:not(.dm__972a0) {
+.content_d125d2>div:nth-child(3) {
   position: absolute;
   width: calc(100% / var(--hb-button-count-dynamic));
   left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-nitro-order, 2) - 1));
@@ -37,8 +37,17 @@ ul>.channel__972a0:not(.dm__972a0) {
   top: var(--hb-vertical-margin, 12px);
   margin: 0;
   &:nth-of-type(2) {
-    left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-requests-order, 4) - 1));
+    left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-requests-order, 5) - 1));
   }
+}
+
+/*Quests*/
+.wrapper__553bf {
+  position: absolute;
+  width: calc(100% / var(--hb-button-count-dynamic));
+  left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-quests-order, 4) - 1));
+  top: var(--hb-vertical-margin, 12px);
+  margin: 0; 
 }
 
 /*equal distance top and bottom*/
@@ -73,9 +82,4 @@ ul>.channel__972a0:not(.dm__972a0) {
   left: 50%;
   top: 16px;
   scale: 0.8;
-}
-
-/*Temporary Nitro Advertisement*/
-.premiumTrialBadge_e4ef22 {
-  display: none;
 }
