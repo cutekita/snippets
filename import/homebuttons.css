@@ -1,53 +1,58 @@
-/**
-  * @name Homebuttons
-  * @author cutekita
-  * @version 1.2.1
-  * @description Collapses the different tabs in the home tab into neat buttons
-  * @website https://github.com/cutekita/snippets
-*/
-
 /*Adds one to the button count when the messagerequest icon is there*/
 html {
-  --hb-button-count-dynamic: var(--hb-button-count, 4);
+  --hb-button-count-dynamic: calc(var(--hb-button-count, 4) + var(--hb-pending-message-request));
+  --hb-pending-message-request: 0;
 
-  &:has(.link__972a0[data-list-item-id$="messageRequests"]) {
-    --hb-button-count-dynamic: calc(var(--hb-button-count, 4) + 1);
+  &:has(.link__972a0[href="/message-requests"]) {
+    --hb-pending-message-request: 1;
   }
 }
 
-/*Friends Button*/
+/*Friends*/
 .friendsButtonContainer_e6b769 {
   width: calc(100% / var(--hb-button-count-dynamic));
 }
 
-/*Nitro Button*/
-.scroller__99e7c>.content_d125d2>div:nth-child(3) {
+/*Message Requests*/
+.channel__972a0:has(>.interactive__972a0>.link__972a0[href="/message-requests"]) {
   position: absolute;
   width: calc(100% / var(--hb-button-count-dynamic));
-  left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-nitro-order, 2) - 1));
+  left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-messages-order, 2) - 1));
   top: var(--hb-vertical-margin, 12px);
   margin: 0;
 }
 
-/*Shop & Message Requests*/
-ul>.channel__972a0:not(.dm__972a0) {
+/*Nitro*/
+.content_d125d2>div:not([class]):has(>.channel__972a0) {
   position: absolute;
   width: calc(100% / var(--hb-button-count-dynamic));
-  left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-shop-order, 3) - 1));
+  left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-nitro-order, 2) - 1 + var(--hb-pending-message-request)));
+  top: var(--hb-vertical-margin, 12px);
+
+  &>.channel__972a0 {
+    margin: 0;
+  }
+}
+
+/*Shop*/
+.channel__972a0:has(>.interactive__972a0>.link__972a0[href="/shop"]) {
+  position: absolute;
+  width: calc(100% / var(--hb-button-count-dynamic));
+  left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-shop-order, 3) - 1 + var(--hb-pending-message-request)));
   top: var(--hb-vertical-margin, 12px);
   margin: 0;
-  &:nth-of-type(2) {
-    left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-requests-order, 5) - 1));
-  }
 }
 
 /*Quests*/
 .wrapper__553bf {
   position: absolute;
   width: calc(100% / var(--hb-button-count-dynamic));
-  left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-quests-order, 4) - 1));
+  left: calc(100% / var(--hb-button-count-dynamic) * (var(--hb-quests-order, 4) - 1 + var(--hb-pending-message-request)));
   top: var(--hb-vertical-margin, 12px);
-  margin: 0; 
+
+  &>.channel__972a0 {
+    margin: 0;
+  }
 }
 
 /*equal distance top and bottom*/
