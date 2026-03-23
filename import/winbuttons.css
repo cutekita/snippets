@@ -1,40 +1,77 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 3.0.8
+  * @version 3.1.0
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
 
 :root {
-  --wb-trailing-button-width: calc(var(--wb-button-count, 3) * 44px + 165px);
+  --wb-trailing-button-width: calc(var(--wb-windowbutton-width, 48px) * 3 + (32px + var(--wb-button-gap, 12px)) * var(--wb-button-count, 4) + 24px);
   --app-border-frame: #00000000 !important;
 }
+
+/* -- Frame Buttons -- */
 
 .base__5e434 {
   --custom-app-top-bar-height: 0;
 }
 
-/*Resize window buttons to be square*/
-.winButton_c38106 {
-  width: var(--wb-button-width, 48px); 
-  height: var(--custom-channel-header-height, 48px)
+/*Equal gap and size for frame and header buttons*/
+.trailing_c38106 {
+  gap: var(--wb-button-gap, 12px);
+  &>*:not(.winButtons_c38106) {
+    width: 32px !important;
+    height: 32px;
+    justify-items: center;
+    align-content: center;
+    & svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
-/*Align window buttons to channel header*/
+/*Resize window buttons and remove gap*/
+.winButtons_c38106 {
+  gap: 0;
+}
+.winButton_c38106 {
+  width: var(--wb-windowbutton-width, 48px); 
+  height: var(--custom-channel-header-height, 48px);
+}
+
+/*Resize and reposition divider*/
+.winButtonsWithDivider_c38106:before {
+  height: calc(var(--custom-channel-header-height) - var(--wb-divider-height, 18px));
+  margin-inline: 6px 0;
+}
+
+/*Second window buttons when settings are open*/
+.systemBar_c38106.systemBar_c38106 {
+  top: 0;
+  z-index: 1003;
+}
+
+/* -- Header Buttons -- */
+
+/*Vertically align header buttons to channel header*/
 .bar_c38106 {
   top: calc(var(--custom-channel-header-height, 48px) / 2);
   z-index: 3;
 }
 
-/*Second window buttons when settings are open*/
-.systemBar_c38106 {
-  top: 0;
-  z-index: 1003;
+/*Distance channel header buttons to not overlap with window buttons*/
+.toolbar__9293f /*Chat*/
+,.alignedRightContent__80679 /*Shop Page*/
+,.headerBarInner__1a9ce.headerBarInner__1a9ce
+{
+  margin-right: var(--wb-trailing-button-width);
+  padding-right: 0;
+  gap: var(--wb-button-gap, 12px);
 }
-
-.winButtonsWithDivider_c38106:before {
-  height: calc(var(--custom-channel-header-height) - 24px);
+.navBar__131a1>.upperContainer__9293f>.children__9293f /*Nitro Page*/ {
+  margin-right: calc(var(--wb-trailing-button-width) - 16px);
 }
 
 /*Server Title*/
@@ -42,35 +79,9 @@
   display: none;
 }
 
-/*Distance channel header buttons to not overlap with window buttons*/
-.toolbar__9293f /*Chat*/
-,.alignedRightContent__80679 /*Shop Page*/
-,.headerBarInner__1a9ce.headerBarInner__1a9ce
-,.navBar__88ef1>.upperContainer__9293f>.children__9293f /*Nitro Page*/{
-  margin-right: var(--wb-trailing-button-width);
-  padding-right: 0;
-}
-/*Discover Page*/
-.headerBar__8a7fc {
-  padding-right: calc(var(--wb-trailing-button-width) + 16px);
-}
+/* -- Window Dragging -- */
 
-/*Shop Page Orbs*/
-.container__44ee9 {
-  margin-right: 0;
-}
-
-.navBarContent__88ef1 /*Nitro Page Gift Nitro Button*/
-,.headerBarContent__1a9ce /*Quests Page Orbs*/{
-  padding-right: 0;
-}
-
-/*Don't move buttons in VC when in fullscreen */
-.fullScreen_cb9592~.layerContainer__59d0d, .fullScreen_cb9592 {
-  --wb-trailing-button-width: 0;
-}
-
-/*Chat*/
+/*Realign chat header text and enable drag*/
 .children__9293f {
   app-region: drag;
   padding: 9px 0 8px 16px;
@@ -80,25 +91,95 @@
   }
 }
 
-.navBarSectionContent__88ef1, .navBarContent__88ef1>.button_a22cb0 /*Nitro Page*/
+/*Remove drag from buttons in header*/
+.navBarSectionContent__131a1, .navBarContent__131a1>.button_a22cb0 /*Nitro Page*/
 ,.tabs__354ec, .alignedRightContent__80679 /*Shop Page*/
 ,.tabs__26669 /*Quests Page*/{
   app-region: no-drag;
 }
 
-/*Overlap Fixes*/
-.wrapper_cb9592~.layerContainer__59d0d {
+/*Set to no-drag to allow clicking topic*/
+.topic__6ec1a {
+  app-region: var(--wb-topic-drag, drag);
+}
+
+/*Discover Page*/
+.headerBar__8a7fc {
+  padding-right: 0;
+  z-index: 2;
+  &>.searchBar__1ac1c {
+    margin-right: calc(var(--wb-trailing-button-width));
+    app-region: no-drag
+  }
+}
+.backdrop__8a7fc {
+  max-width: calc(100% - var(--wb-trailing-button-width));
+  app-region: drag
+}
+.tab__65d41 {
+  app-region: no-drag
+}
+
+/* -- Additional Fixes -- */
+
+/*Channels & Roles and Members pages*/
+.innerHeader__0b563, .header_c791b2>.upperContainer__9293f>.children__9293f {
+  margin-right: var(--wb-trailing-button-width);
+}
+
+.navBarContent__131a1 /*Nitro page gifting*/
+,.container__9293f /*General headers*/ {
+  padding-right: 0;
+}
+
+/*Toggle for back forwards buttons*/
+.guilds__5e434 {
+  margin-top: calc(12px + (32px * var(--wb-backforward-toggle, 1)));
+}
+.leading_c38106 {
+  visibility: hidden;
+}
+
+/*Remove rounding and 1 pixel top borders*/
+.sidebarListRounded__5e434 {
+  border-radius: 0;
+  border-top: none;
+}
+.page__5e434>* /*General*/
+,.container__9293f /*General headers*/
+,.homeWrapper__0920e /*Nitro*/ {
+  border-top: none !important;
+}
+
+/*Fix header overlaying frame buttons*/
+.title_f75fb0 {
   z-index: 2;
 }
-.title_f75fb0 {
-  z-index: 1;
+
+/*Fix voice channel chat*/
+.container__01ae2>.container__9293f>.upperContainer__9293f>.children__9293f {
+  margin-right: calc(var(--wb-trailing-button-width) - 16px);
+  &>.channelIcon__9293f {
+    display: none;
+  }
+}
+.container__01ae2>.container__9293f>.upperContainer__9293f>.toolbar__9293f {
+  order: -1;
+  margin: 0;
+  padding: 0;
+}
+.layerContainer__59d0d:has(>.chatLayerWrapper__01ae2) {
+  z-index: 2;
 }
 
-/*Server list*/
-.guilds__5e434 {
-  margin-top: 12px;
+/*Fix voice channel top control alignment*/
+.headerBar__49508>.upperContainer__9293f>.toolbar__9293f {
+  height: 32px;
 }
-
-.backForwardButtons__63abb {
-  display: none;
+.fullScreen_cb9592 .toolbar__9293f, .sidebarOpen_cb9592 .toolbar__9293f
+,.headerWrapper_cb9592{
+  margin-right: 0;
+}
+.wrapper_cb9592:not(.sidebarOpen_cb9592) .videoControls_bfe55a {
+  padding-right: 0;
 }
