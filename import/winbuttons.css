@@ -1,7 +1,7 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 3.1.0
+  * @version 3.1.1
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
@@ -147,6 +147,7 @@
 }
 .page__5e434>* /*General*/
 ,.container__9293f /*General headers*/
+,.chat_f75fb0 /*Chat related headers*/
 ,.homeWrapper__0920e /*Nitro*/ {
   border-top: none !important;
 }
