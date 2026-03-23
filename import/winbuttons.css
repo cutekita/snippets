@@ -1,7 +1,7 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 3.1.1
+  * @version 3.1.2
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
@@ -134,7 +134,7 @@
 
 /*Toggle for back forwards buttons*/
 .guilds__5e434 {
-  margin-top: calc(12px + (32px * var(--wb-backforward-toggle, 1)));
+  margin-top: calc(12px + 32px * var(--wb-backforward-toggle, 0));
 }
 .leading_c38106 {
   visibility: hidden;
