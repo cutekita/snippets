@@ -1,7 +1,7 @@
 /**
   * @name Fullscreensettings
   * @author cutekita
-  * @version 3.1.3
+  * @version 3.2.0
   * @description Expands the settings to fill the entire screen
   * @website https://github.com/cutekita/snippets
 */
@@ -19,8 +19,7 @@
 
 /*Fill the rest of the page with settings content*/
 .contentColumn__23e6b /*Container for all settings pages*/
-,.max-width__8e680, .max-width__5b321 /*Family Centre > Activity*/
-,.container_d9914b /*Family Centre > My Family*/
+,.customColumn__23e6b /*Invites*/
 ,.leftColumn_dbba93 /*Server Profile*/
 ,.leftContent_a84c50 /*Server Tag*/
 ,.content_d125d2.content_d125d2 /*Roles*/, .contentWidth_c6bf1b /*Roles > Edit Roles*/ 
@@ -31,27 +30,6 @@
 /*Remove out of place padding*/
 .contentColumn__23e6b {
   padding-top: 0;
-}
-
-/*Change how many columns plugin/theme grids have to a variable*/
-div:not([class])>.vc-plugins-grid, .vc-settings-theme-grid {
-	grid-template-columns: repeat(auto-fill, minmax(calc(100% / (var(--fs-grid-columns, 4) + 1)), 1fr));
-}
-
-/*All kinds of issues with the avatar on the my account page, just replace the circle background with a border*/
-.accountProfileCard__1fed1>.mask__68edb>mask>circle {
-  display: none;
-}
-
-.avatar__1fed1 {
-  top: unset !important;
-  bottom: 320.5px;
-  border: var(--background-base-lowest) 6px solid;
-  margin: -6px;
-}
-
-.wrapper__06283 {
-  max-width: 568px;
 }
 
 /*Server tag selection grid*/
