@@ -1,10 +1,16 @@
 /**
   * @name Settingswindow
   * @author cutekita
-  * @version 3.0.6
+  * @version 3.0.7
   * @description Displays the settings page like a window
   * @website https://github.com/cutekita/snippets
 */
+
+:root {
+  --sw-width: var(--ds-width);
+  --sw-height: var(--ds-height);
+  --sw-rounding: var(--ds-rounding);
+}
 
 /*Show original app and make it uninteractable when settings are open*/
 .baseLayer__960e4:has(+.layer__960e4) {
@@ -14,9 +20,9 @@
 
 /*Shrink settings container and center it*/
 .layer__960e4+.layer__960e4 {
-  width: var(--sw-width, 90vw);
+  width: var(--sw-width, 85vw);
   height: var(--sw-height, 90vh);
-  left: calc((100vw - var(--sw-width, 90vw))/2);
+  left: calc((100vw - var(--sw-width, 85vw))/2);
   top: calc((100vh - var(--sw-height, 90vh))/2);
   border-radius: var(--sw-rounding, 1em);
   padding: 0;
@@ -28,7 +34,7 @@
 .layer__960e4.stop-animations:after {
   content: "";
   position: fixed;
-  background: var(--sw-background-filter, #000000a0);
+  background: var(--sw-background-filter, var(--background-scrim, #000000a0));
   left: 0;
   top: 0;
   right: 0;
