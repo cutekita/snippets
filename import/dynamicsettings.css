@@ -1,7 +1,7 @@
 /**
   * @name Dynamic Settings
   * @author cutekita
-  * @version 1.0.3
+  * @version 1.0.4
   * @description Allow customising the size of the new main settings modal
   * @website https://github.com/cutekita/snippets
 */
@@ -42,10 +42,10 @@
 }
 
 /*Background for avatars doesn't adjust properly, just replace it*/
-.accountProfileCard__1fed1>.mask__68edb>mask>circle {
+.accountProfileCard_a27e58>.mask__68edb>mask>circle {
   display: none;
 }
-.avatar__1fed1 {
+.avatar_a27e58 {
   top: unset !important;
   bottom: 320.5px;
   border: var(--background-base-lowest) 6px solid;
@@ -60,4 +60,14 @@
 /*Fix clipping on Saturation slider in Accessibility*/
 .control__5a838:has(>.slider_a562c8) {
   padding: 0 10px;
+}
+
+/*idk felt cute might delete later (three buttons on family centre page)*/
+.featureCards__8e680 {
+  justify-content: space-between;
+  gap: unset;
+}
+.container__8cc9a {
+  align-items: center;
+  text-align: center;
 }
