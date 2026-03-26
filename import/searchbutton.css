@@ -1,13 +1,13 @@
 /**
   * @name Searchbutton
   * @author cutekita
-  * @version 1.0.3
+  * @version 1.0.4
   * @description Collapses the search button when it isn't used
   * @website https://github.com/cutekita/snippets
 */
 
-.search__97492:not(.open__97492) {
-  &>.searchBar__97492 {
+.search_c322aa:not(.open_c322aa) {
+  &>.searchBar_c322aa {
     width: fit-content;
     border: none;
     background: none;
@@ -30,12 +30,12 @@
   margin: 0;
 }
 
-.open__97492>.searchBar__97492>.icon__97492 {
+.open_c322aa>.searchBar_c322aa>.icon_c322aa {
   margin-top: -3px;
   margin-right: -1px;
 }
 
-.icon__97492.icon__97492 {
+.icon_c322aa.icon_c322aa {
   height: 32px;
   width: 32px;
 }
