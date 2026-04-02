@@ -1,7 +1,7 @@
 /**
   * @name Winbuttons
   * @author cutekita
-  * @version 3.1.2
+  * @version 3.1.3
   * @description Seamlessly merges the window buttons into the channel header
   * @website https://github.com/cutekita/snippets
 */
@@ -94,7 +94,8 @@
 /*Remove drag from buttons in header*/
 .navBarSectionContent__131a1, .navBarContent__131a1>.button_a22cb0 /*Nitro Page*/
 ,.tabs__354ec, .alignedRightContent__80679 /*Shop Page*/
-,.tabs__26669 /*Quests Page*/{
+,.tabs__26669 /*Quests Page*/
+,.item_aa8da2 /*Members Page*/ {
   app-region: no-drag;
 }
 
