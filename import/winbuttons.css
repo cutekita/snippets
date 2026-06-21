@@ -185,3 +185,9 @@
 .wrapper_cb9592:not(.sidebarOpen_cb9592) .videoControls_bfe55a {
   padding-right: 0;
 }
+
+/*Offset the search popup to be centered below the search icon*/
+.layer__59d0d:has(>div>.container__16eb0) {
+    left: unset !important;
+    right: calc(var(--wb-trailing-button-width) - 61px);
+}
