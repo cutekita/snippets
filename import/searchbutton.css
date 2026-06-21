@@ -1,41 +1,49 @@
 /**
   * @name Searchbutton
   * @author cutekita
-  * @version 1.0.4
+  * @version 1.0.5
   * @description Collapses the search button when it isn't used
   * @website https://github.com/cutekita/snippets
 */
 
-.search_c322aa:not(.open_c322aa) {
-  &>.searchBar_c322aa {
-    width: fit-content;
-    border: none;
-    background: none;
-    padding: 0;
-    cursor: pointer;
+.search__49676 {
+    transition: width var(--sb-animation-duration, .3s) var(--sb-animation-function, ease-out);
 
-    &>.DraftEditor-root {
-      width: 32px;
-      position: absolute;
-      padding: 0;
-
-      &>.public-DraftEditorPlaceholder-root>.public-DraftEditorPlaceholder-inner {
-        color: transparent;
-      }
+    &:not(:has(>.open_c322aa)) {
+        width: 32px;
     }
-  }
+}
+
+.search_c322aa:not(.open_c322aa) {
+    &>.searchBar_c322aa {
+        width: fit-content;
+        border: none;
+        background: none;
+        padding: 0;
+        cursor: pointer;
+
+        &>.DraftEditor-root {
+            width: 32px;
+            position: absolute;
+            padding: 0;
+
+            &>.public-DraftEditorPlaceholder-root>.public-DraftEditorPlaceholder-inner {
+                color: transparent;
+            }
+        }
+    }
 }
 
 .search__49676 {
-  margin: 0;
-}
-
-.open_c322aa>.searchBar_c322aa>.icon_c322aa {
-  margin-top: -3px;
-  margin-right: -1px;
+    margin: 0;
 }
 
 .icon_c322aa.icon_c322aa {
-  height: 32px;
-  width: 32px;
+    height: 32px;
+    width: 32px;
+    margin-inline-end: 0;
+}
+
+.searchBar_c322aa {
+    justify-self: end;
 }
